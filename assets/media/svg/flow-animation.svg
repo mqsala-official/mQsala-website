@@ -1,0 +1,56 @@
+<svg width="100%" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .flow-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: draw-flow 5s forwards;
+        }
+        .flow-node {
+            opacity: 0;
+            animation: fade-in 1s forwards;
+        }
+        .flow-node:nth-child(2) { animation-delay: 0.5s; }
+        .flow-node:nth-child(3) { animation-delay: 1.5s; }
+        .flow-node:nth-child(4) { animation-delay: 2.5s; }
+        .flow-node:nth-child(5) { animation-delay: 3.5s; }
+        .flow-node:nth-child(6) { animation-delay: 4.5s; }
+
+        @keyframes draw-flow {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .flow-line, .flow-node {
+                animation: none;
+                opacity: 1;
+            }
+        }
+    </style>
+    <line class="flow-line" x1="50" y1="50" x2="750" y2="50" stroke="#0055A4" stroke-width="4"/>
+    <g class="flow-node">
+        <circle cx="50" cy="50" r="10" fill="#E7C717"/>
+        <text x="50" y="80" text-anchor="middle" fill="#222222">Request</text>
+    </g>
+    <g class="flow-node">
+        <circle cx="200" cy="50" r="10" fill="#E7C717"/>
+        <text x="200" y="80" text-anchor="middle" fill="#222222">Pickup</text>
+    </g>
+    <g class="flow-node">
+        <circle cx="350" cy="50" r="10" fill="#E7C717"/>
+        <text x="350" y="80" text-anchor="middle" fill="#222222">Partner Laundry</text>
+    </g>
+    <g class="flow-node">
+        <circle cx="500" cy="50" r="10" fill="#E7C717"/>
+        <text x="500" y="80" text-anchor="middle" fill="#222222">Delivery</text>
+    </g>
+    <g class="flow-node">
+        <circle cx="650" cy="50" r="10" fill="#E7C717"/>
+        <text x="650" y="80" text-anchor="middle" fill="#222222">Confirmation</text>
+    </g>
+</svg>

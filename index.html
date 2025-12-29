@@ -196,6 +196,25 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+        @media (prefers-reduced-motion: reduce) {
+            .clock-hand, .magnifying-glass, .water-drop, .checkmark {
+                animation: none;
+            }
+        }
+        #how-it-works .grid > div {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            opacity: 0.5;
+        }
+
+        #how-it-works .grid > div.active {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #how-it-works .grid > div.active {
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body class="bg-white text-charcoal antialiased">
@@ -256,10 +275,11 @@
 
     <!-- Hero Section -->
     <header class="bg-hero-gradient pt-32 pb-40 relative text-white">
+        <img src="assets/media/svg/hero-background.svg" alt="Abstract background" class="absolute inset-0 w-full h-full object-cover"/>
         <div class="absolute inset-0 bg-black opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight fade-in-up" style="font-family: 'Poppins', sans-serif;" data-key="hero-title">The Future of Laundry is Here.</h1>
-            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-sky fade-in-up delay-1" data-key="hero-subtitle">Experience laundry reimagined. Seamless scheduling, transparent tracking, and premium care, all at your fingertips.</p>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight hero-title-animation" style="font-family: 'Poppins', sans-serif;" data-key="hero-title">The Future of Laundry is Here.</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-sky hero-subtitle-animation" data-key="hero-subtitle">Experience laundry reimagined. Seamless scheduling, transparent tracking, and premium care, all at your fingertips.</p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 fade-in-up delay-2">
                 <a href="#" class="w-full sm:w-auto bg-golden-yellow text-charcoal font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105 btn-shine">
                     <img src="https://www.svgrepo.com/show/452159/app-store.svg"
@@ -291,29 +311,33 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Feature 1 -->
                     <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up">
-                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="assets/media/svg/smart-scheduling.svg" alt="Smart Scheduling" class="w-12 h-12"/>
+                        </div>
                         <h3 class="text-xl font-bold my-4 text-charcoal" data-key="feature1-title">Smart Scheduling</h3>
                         <p class="text-gray-600" data-key="feature1-desc">Pick a time and place for pick-up & drop-off that fits your busy life.</p>
                     </div>
                     <!-- Feature 2 -->
                     <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-1">
-                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="assets/media/svg/secure-transparent.svg" alt="Secure & Transparent" class="w-12 h-12"/>
+                        </div>
                         <h3 class="text-xl font-bold my-4 text-charcoal" data-key="feature2-title">Secure & Transparent</h3>
                         <p class="text-gray-600" data-key="feature2-desc">Powered by blockchain for secure payments and transparent order tracking.</p>
                     </div>
                     <!-- Feature 3 – Eco-Friendly -->
                     <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-2">
                         <div class="flex-shrink-0 bg-green-600 text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c4.5 0 8 3.5 8 8 0 7-8 12-8 12S4 17 4 10c0-4.5 3.5-8 8-8z M11 14l5-5" />
-                            </svg>
+                            <img src="assets/media/svg/eco-friendly.svg" alt="Eco-Friendly" class="w-12 h-12"/>
                         </div>  
                         <h3 class="text-xl font-bold my-4 text-charcoal" data-key="feature3-title">Eco-Friendly</h3>
                         <p class="text-gray-600" data-key="feature3-desc">We prioritize sustainability by partnering with laundries using green methods.</p>
                     </div>
                     <!-- Feature 4 -->
                     <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-3">
-                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="assets/media/svg/quality-guaranteed.svg" alt="Quality Guaranteed" class="w-12 h-12"/>
+                        </div>
                         <h3 class="text-xl font-bold my-4 text-charcoal" data-key="feature4-title">Quality Guaranteed</h3>
                         <p class="text-gray-600" data-key="feature4-desc">High-quality cleaning with reliable service, every single time.</p>
                     </div>
@@ -359,6 +383,9 @@
         <!-- Technology Section -->
         <section id="technology" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <img src="assets/media/svg/flow-animation.svg" alt="Order Flow Animation" class="w-full"/>
+                </div>
                  <div class="text-center mb-16">
                     <h2 data-key="techTitle" class="text-3xl md:text-4xl font-bold text-midnight-navy">A Deep Dive into Our Technology</h2>
                     <p data-key="techSubtitle" class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Built on a foundation of robust, scalable, and secure enterprise-grade technology.</p>
@@ -886,6 +913,21 @@
 
             gdprCheckbox.addEventListener('change', function() {
                 subscribeButton.disabled = !this.checked;
+            });
+
+            // --- "How it Works" Scroll Progression ---
+            const steps = document.querySelectorAll('#how-it-works .grid > div');
+            const stepObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        steps.forEach(step => step.classList.remove('active'));
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            steps.forEach(step => {
+                stepObserver.observe(step);
             });
         });
     </script>
