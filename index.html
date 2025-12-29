@@ -197,7 +197,7 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         @media (prefers-reduced-motion: reduce) {
-            .clock-hand, .magnifying-glass, .water-drop, .checkmark {
+            .clock-hand, .magnifying-glass, .water-drop, .checkmark, .hero-title-animation, .hero-subtitle-animation {
                 animation: none;
             }
         }
@@ -225,10 +225,7 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="#" class="flex-shrink-0 flex items-center">
-                    <!-- FIXED: Replaced empty SVG with a placeholder. Replace with your actual SVG content. -->
-                    <svg class="h-10 w-auto" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <text x="5" y="30" font-family="Poppins, sans-serif" font-size="24" font-weight="bold" fill="#003A6F">mQsala</text>
-                    </svg>
+                    <img src="mQsala-website/src/images/mQsala-images/images/mqsala-horizontal.svg" alt="mQsala Logo" class="h-10 w-auto">
                 </a>
                 <!-- Desktop Navigation Links -->
                 <div class="hidden md:flex items-center space-x-6 rtl:space-x-reverse">
@@ -248,7 +245,7 @@
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center ml-4 rtl:mr-4">
                         <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-charcoal hover:text-royal-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue">
-                            <span class="sr-only">Open main menu</span>
+                            <span class="sr-only" data-key="open-main-menu">Open main menu</span>
                             <svg id="hamburger-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
@@ -278,7 +275,7 @@
         <img src="assets/media/svg/hero-background.svg" alt="Abstract background" class="absolute inset-0 w-full h-full object-cover"/>
         <div class="absolute inset-0 bg-black opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight hero-title-animation" style="font-family: 'Poppins', sans-serif;" data-key="hero-title">The Future of Laundry is Here.</h1>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight hero-title-animation" data-key="hero-title">The Future of Laundry is Here.</h1>
             <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-sky hero-subtitle-animation" data-key="hero-subtitle">Experience laundry reimagined. Seamless scheduling, transparent tracking, and premium care, all at your fingertips.</p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 fade-in-up delay-2">
                 <a href="#" class="w-full sm:w-auto bg-golden-yellow text-charcoal font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105 btn-shine">
@@ -305,7 +302,7 @@
         <section id="features" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" style="font-family: 'Poppins', sans-serif;" data-key="features-title">The mQsala Difference</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" data-key="features-title">The mQsala Difference</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-key="features-subtitle">Discover the intelligent features that set us apart, designed for your modern lifestyle.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -349,14 +346,14 @@
         <section id="how-it-works" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" style="font-family: 'Poppins', sans-serif;" data-key="how-it-works-title">Fresh Laundry in 3 Simple Steps</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" data-key="how-it-works-title">Fresh Laundry in 3 Simple Steps</h2>
                 </div>
                 <div class="relative">
                     <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-300" style="z-index: 0;"></div>
                     <div class="grid md:grid-cols-3 gap-12 relative z-10">
-                        <div class="text-center fade-in-up"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">1</div></div><h3 class="text-xl font-bold mb-2" data-key="step1-title">Schedule Pick-up</h3><p class="text-gray-600" data-key="step1-desc">Open the app and book a convenient time for us to collect your laundry.</p></div>
-                        <div class="text-center fade-in-up delay-1"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">2</div></div><h3 class="text-xl font-bold mb-2" data-key="step2-title">Expert Care & Finishing</h3><p class="text-gray-600" data-key="step2-desc">Our certified partners treat your garments with the utmost care, using eco-friendly products for a perfect wash and press.</p></div>
-                        <div class="text-center fade-in-up delay-2"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">3</div></div><h3 class="text-xl font-bold mb-2" data-key="step3-title">Receive Fresh Clothes</h3><p class="text-gray-600" data-key="step3-desc">We deliver your fresh, clean laundry back to your doorstep at the scheduled time.</p></div>
+                        <div class="text-center fade-in-up"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50" data-key="step1">1</div></div><h3 class="text-xl font-bold mb-2" data-key="step1-title">Schedule Pick-up</h3><p class="text-gray-600" data-key="step1-desc">Open the app and book a convenient time for us to collect your laundry.</p></div>
+                        <div class="text-center fade-in-up delay-1"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50" data-key="step2">2</div></div><h3 class="text-xl font-bold mb-2" data-key="step2-title">Expert Care & Finishing</h3><p class="text-gray-600" data-key="step2-desc">Our certified partners treat your garments with the utmost care, using eco-friendly products for a perfect wash and press.</p></div>
+                        <div class="text-center fade-in-up delay-2"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50" data-key="step3">3</div></div><h3 class="text-xl font-bold mb-2" data-key="step3-title">Receive Fresh Clothes</h3><p class="text-gray-600" data-key="step3-desc">We deliver your fresh, clean laundry back to your doorstep at the scheduled time.</p></div>
                     </div>
                 </div>
             </div>
@@ -366,7 +363,7 @@
         <section id="about" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="fade-in-up"><span class="text-royal-blue font-semibold" data-key="about-eyebrow">Our Mission</span><h2 class="text-3xl md:text-4xl font-bold text-midnight-navy mt-2" style="font-family: 'Poppins', sans-serif;" data-key="about-title">Pioneering the Future of Clean</h2><p class="mt-4 text-gray-600 text-lg" data-key="about-desc">mQsala is revolutionizing the laundry industry. By integrating cutting-edge technology with a commitment to sustainability and customer satisfaction, we deliver an unparalleled service that empowers both users and local laundry partners.</p>
+                    <div class="fade-in-up"><span class="text-royal-blue font-semibold" data-key="about-eyebrow">Our Mission</span><h2 class="text-3xl md:text-4xl font-bold text-midnight-navy mt-2" data-key="about-title">Pioneering the Future of Clean</h2><p class="mt-4 text-gray-600 text-lg" data-key="about-desc">mQsala is revolutionizing the laundry industry. By integrating cutting-edge technology with a commitment to sustainability and customer satisfaction, we deliver an unparalleled service that empowers both users and local laundry partners.</p>
                         <div class="mt-8 grid grid-cols-2 gap-6">
                             <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 mr-3 rtl:ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold" data-key="value1-title">Trust & Transparency</h4><p class="text-sm text-gray-600" data-key="value1-desc">Built on secure technology.</p></div></div>
                             <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 mr-3 rtl:ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold" data-key="value2-title">Innovation</h4><p class="text-sm text-gray-600" data-key="value2-desc">Constantly improving your experience.</p></div></div>
@@ -402,7 +399,7 @@
         <section id="roadmap" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" style="font-family: 'Poppins', sans-serif;" data-key="roadmap-title">Roadmap: The Next Evolution</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" data-key="roadmap-title">Roadmap: The Next Evolution</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-key="roadmap-subtitle">Integrating Blockchain & AI for a Smarter Future.</p>
                 </div>
                 
@@ -437,7 +434,7 @@
                                     <p class="text-gray-600 text-sm mt-1" data-key="next-feature3-desc">Helpful garment-care tips (fabric type, stain guidance) to improve results.</p>
                                 </div>
                             </li>
-                            <li class="flex items-start">
+                             <li class="flex items-start">
                                 <i class="fas fa-calendar-check text-green-500 mt-1 mr-3 rtl:ml-3"></i>
                                 <div>
                                     <strong class="text-midnight-navy" data-key="next-feature4-title">Smarter Scheduling:</strong>
@@ -488,6 +485,43 @@
             </div>
         </section>
         
+        <!-- Why mQsala Section -->
+        <section id="why-mqsala" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy" data-key="why-title">Why mQsala</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-key="why-subtitle">Because convenience is not enough—your trust matters.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-eye"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal" data-key="why-card1-title">Transparency you can feel</h3>
+                        <p class="text-gray-600" data-key="why-card1-desc">Track your order through clear milestones—pickup, care, delivery—so you always know what’s happening.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-1">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal" data-key="why-card2-title">Secure & privacy-first by design</h3>
+                        <p class="text-gray-600" data-key="why-card2-desc">We protect your information. The technology works in the background while your data stays safeguarded.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-2">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-handshake"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal" data-key="why-card3-title">Fewer surprises, smoother service</h3>
+                        <p class="text-gray-600" data-key="why-card3-desc">Verified updates improve accountability and reduce confusion—helping us deliver consistent quality.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-3">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-robot"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal" data-key="why-card4-title">AI support that keeps you in control</h3>
+                        <p class="text-gray-600" data-key="why-card4-desc">Smart assistance helps with questions, updates, and care tips—while you confirm the final actions.</p>
+                    </div>
+                </div>
+                <p class="text-center mt-12 text-gray-500" data-key="why-reassurance">Advanced technology doesn’t need to feel complicated. We use it to make laundry simple.</p>
+            </div>
+        </section>
+        
         <!-- Partners Section -->
         <section id="partners" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -497,39 +531,30 @@
                     
                     <!-- MISA -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up hover:shadow-md transition-shadow">
-                        <div class="h-16 flex items-center justify-center mb-4 text-royal-blue font-bold text-xl">
-                            <span class="border-2 border-royal-blue px-4 py-2 rounded-lg">MISA</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-2" data-key="partner-misa-title">Ministry of Investment of Saudi Arabia</h3>
+                        <img src="mQsala-website/src/images/mQsala-images/images/Saudi_Ministry_of_Investment_Logo.svg" alt="Saudi Ministry of Investment Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4" data-key="partner-misa-title">Ministry of Investment of Saudi Arabia</h3>
                         <p class="text-sm text-gray-600" data-key="partner-misa-desc">We obtained an entrepreneurial MISA license.</p>
                     </div>
 
                     <!-- CODE -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up delay-1 hover:shadow-md transition-shadow">
-                        <div class="h-16 flex items-center justify-center mb-4 text-royal-blue font-bold text-xl">
-                            <span class="border-2 border-royal-blue px-4 py-2 rounded-lg">CODE</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-2" data-key="partner-code-title">Center of Digital Entrepreneurship</h3>
+                        <img src="mQsala-website/src/images/mQsala-images/images/code-logo.png" alt="CODE Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4" data-key="partner-code-title">Center of Digital Entrepreneurship</h3>
                         <p class="text-sm text-gray-600" data-key="partner-code-desc">King Saud University CODE Lab.</p>
                     </div>
 
                     <!-- Vision 2030 -->
                     <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up delay-2 hover:shadow-md transition-shadow">
-                        <div class="h-16 flex items-center justify-center mb-4 text-royal-blue font-bold text-xl">
-                            <span class="border-2 border-royal-blue px-4 py-2 rounded-lg">2030</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-2" data-key="partner-vision-title">Saudi Vision 2030</h3>
+                        <img src="mQsala-website/src/images/mQsala-images/images/Saudi_Vision_2030_logo.svg" alt="Saudi Vision 2030 Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4" data-key="partner-vision-title">Saudi Vision 2030</h3>
                         <p class="text-sm text-gray-600" data-key="partner-vision-desc">Aligned with the Kingdom's vision for digital transformation.</p>
                     </div>
 
                 </div>
                  <!-- Other Partners -->
-                <div class="mt-16 flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-70">
-                    <img src="src/images/mQsala-images/images/minnik_it_solutions_logo.png" alt="MINNIK IT Solutions Logo" class="h-10 grayscale hover:grayscale-0 transition-all duration-300">
-                </div>
-            </div>
-        </section>
-
+                <div class="text-center mb-16">
+            <img src="assets/media/svg/flow-animation.svg" alt="Order Flow Animation" class="w-full"/>
+        </div>
         <!-- Newsletter Section -->
         <section class="bg-light-sky/30 py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -561,8 +586,8 @@
                             <span class="ml-2 rtl:mr-2" data-key="gdpr-checkbox">I agree to receive email updates & newsletters</span>
                         </label>
                     </div>
-                     <p class="mt-2" data-key="gdpr-text-2">You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
-                     <p class="mt-2" data-key="gdpr-legal">We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms" target="_blank" class="underline">Learn more</a> about Mailchimp's privacy practices.</p>
+                     <p data-key="gdpr-text-2">You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
+                     <p data-key="gdpr-legal">We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms" target="_blank" class="underline" data-key="learn-more">Learn more</a> about Mailchimp's privacy practices.</p>
                 </div>
                 <div id="newsletter-message" class="mt-4 text-lg font-semibold"></div>
             </div>
@@ -577,15 +602,15 @@
                 <div class="md:col-span-1">
                      <a href="#" class="flex items-center mb-4">
                         <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-royal-blue font-bold text-2xl italic shadow-md">Q</div>
-                        <span class="ml-3 rtl:mr-3 text-2xl font-bold text-white">mQsala</span>
+                        <span class="ml-3 rtl:mr-3 text-2xl font-bold text-white" data-key="logo-text">mQsala</span>
                     </a>
                     <p class="text-gray-300" data-key="footer-tagline">Laundry, Reimagined.</p>
                     <div class="flex mt-6 space-x-4 rtl:space-x-reverse">
-                         <a href="https://twitter.com/mQsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">Twitter</span><i class="fab fa-twitter text-2xl"></i></a>
+                         <a href="https://twitter.com/mQsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only" data-key="twitter">Twitter</span><i class="fab fa-twitter text-2xl"></i></a>
                          <!-- FIXED: Corrected the broken Telegram link -->
-                         <a href="https://t.me/mqsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">Telegram</span><i class="fab fa-telegram text-2xl"></i></a>
-                         <a href="https://www.linkedin.com/company/mqsala" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin text-2xl"></i></a>
-                         <a href="https://www.youtube.com/@mqsalaofficial" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">YouTube</span><i class="fab fa-youtube text-2xl"></i></a>
+                         <a href="https://t.me/mqsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only" data-key="telegram">Telegram</span><i class="fab fa-telegram text-2xl"></i></a>
+                         <a href="https://www.linkedin.com/company/mqsala" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only" data-key="linkedin">LinkedIn</span><i class="fab fa-linkedin text-2xl"></i></a>
+                         <a href="https://www.youtube.com/@mqsalaofficial" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only" data-key="youtube">YouTube</span><i class="fab fa-youtube text-2xl"></i></a>
                     </div>
                 </div>
                 <!-- Offices -->
@@ -594,11 +619,11 @@
                     <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
                         <div>
                             <p class="font-semibold" data-key="riyadhOffice">Riyadh Office</p>
-                            <address class="text-gray-300 not-italic text-sm">King Saud University Code Lab,<br>Riyadh, 12372,<br data-key="saudiArabia">Saudi Arabia</address>
+                            <address class="text-gray-300 not-italic text-sm" data-key="riyadh-address">King Saud University Code Lab,<br>Riyadh, 12372,<br>Saudi Arabia</address>
                         </div>
                         <div>
                             <p class="font-semibold" data-key="dubaiOffice">Dubai Office</p>
-                            <address class="text-gray-300 not-italic text-sm">18.01-HD-122, Floor Number 18,<br>Sheikh Rashid Tower,<br>Dubai World Trade Centre</address>
+                            <address class="text-gray-300 not-italic text-sm" data-key="dubai-address">18.01-HD-122, Floor Number 18,<br>Sheikh Rashid Tower,<br>Dubai World Trade Centre</address>
                         </div>
                     </div>
                 </div>
@@ -630,59 +655,57 @@
             // --- Translations Object ---
             const translations = {
                 'en': {
-                    'logo-ar': 'مغسلة', 
-                    'nav-features': 'Features', 
-                    'nav-how-it-works': 'How It Works', 
-                    'nav-about': 'About Us', 
-                    'nav-tech': 'Technology', 
-                    'nav-roadmap': 'Roadmap', 
-                    'nav-partners': 'Partners', 
-                    'hero-title': 'The Future of Laundry is Here.', 
-                    'hero-subtitle': 'Experience laundry reimagined. Seamless scheduling, transparent tracking, and premium care, all at your fingertips.', 
-                    'download-apple': 'Coming Soon on App Store', 
-                    'download-google': 'Coming Soon on Google Play', 
-                    'features-title': 'The mQsala Difference', 
-                    'features-subtitle': 'Discover the intelligent features that set us apart, designed for your modern lifestyle.', 
-                    'feature1-title': 'Smart Scheduling', 
-                    'feature1-desc': 'Pick a time and place for pick-up & drop-off that fits your busy life.', 
-                    'feature2-title': 'Secure & Transparent', 
-                    'feature2-desc': 'Powered by blockchain for secure payments and transparent order tracking.', 
-                    'feature3-title': 'Eco-Friendly', 
-                    'feature3-desc': 'We prioritize sustainability by partnering with laundries using green methods.', 
-                    'feature4-title': 'Quality Guaranteed', 
-                    'feature4-desc': 'High-quality cleaning with reliable service, every single time.', 
-                    'how-it-works-title': 'Fresh Laundry in 3 Simple Steps', 
-                    'step1-title': 'Schedule Pick-up', 
-                    'step1-desc': 'Open the app and book a convenient time for us to collect your laundry.', 
-                    'step2-title': 'Expert Care & Finishing', 
-                    'step2-desc': 'Our certified partners treat your garments with the utmost care, using eco-friendly products for a perfect wash and press.', 
-                    'step3-title': 'Receive Fresh Clothes', 
-                    'step3-desc': 'We deliver your fresh, clean laundry back to your doorstep at the scheduled time.', 
-                    'about-eyebrow': 'Our Mission', 
-                    'about-title': 'Pioneering the Future of Clean', 
-                    'about-desc': "mQsala is revolutionizing the laundry industry. By integrating cutting-edge technology with a commitment to sustainability and customer satisfaction, we deliver an unparalleled service that empowers both users and local laundry partners.", 
-                    'value1-title': 'Trust & Transparency', 
-                    'value1-desc': 'Built on secure technology.', 
-                    'value2-title': 'Innovation', 
-                    'value2-desc': 'Constantly improving your experience.', 
-                    'value3-title': 'Sustainability', 
-                    'value3-desc': 'Caring for your clothes and the planet.', 
-                    'value4-title': 'Customer-Centricity', 
-                    'value4-desc': 'You are at the heart of our service.', 
-                    'newsletter-title': 'Stay Ahead of the Curve', 
-                    'newsletter-subtitle': 'Join our mailing list for exclusive updates, launch announcements, and special offers.', 
-                    'newsletter-email-label': 'Email address', 
-                    'newsletter-placeholder': 'Enter your email', 
-                    'newsletter-button': 'Subscribe', 
-                    'gdpr-checkbox': 'I agree to receive email updates & newsletters', 
-                    'techTitle': 'A Deep Dive into Our Technology', 
-                    'techSubtitle': 'Built on a foundation of robust, scalable, and secure enterprise-grade technology.', 
-                    'techStack': 'Enterprise-Grade Stack', 
-                    'techStackDesc': 'Utilizing a modern stack including React, NestJS, and PostgreSQL, all hosted on AWS for maximum reliability and performance.', 
-                    'techArch': 'Microservices Architecture', 
-                    'techArchDesc': 'Our backend is built with independent microservices, allowing for greater scalability, faster updates, and improved fault isolation.', 
-                    'techPipeline': 'Automated GitOps CI/CD', 
-                    'techPipelineDesc': 'Leveraging Jenkins, Argo CD, and Kubernetes for a fully automated pipeline, ensuring rapid, reliable, and consistent deployments.', 
+                    'logo-text': 'mQsala',
+                    'nav-features': 'Features',
+                    'nav-how-it-works': 'How It Works',
+                    'nav-about': 'About Us',
+                    'nav-tech': 'Technology',
+                    'nav-roadmap': 'Roadmap',
+                    'nav-partners': 'Partners',
+                    'open-main-menu': 'Open main menu',
+                    'hero-title': 'The Future of Laundry is Here.',
+                    'hero-subtitle': 'Experience laundry reimagined. Seamless scheduling, transparent tracking, and premium care, all at your fingertips.',
+                    'download-apple': 'Coming Soon on App Store',
+                    'download-google': 'Coming Soon on Google Play',
+                    'features-title': 'The mQsala Difference',
+                    'features-subtitle': 'Discover the intelligent features that set us apart, designed for your modern lifestyle.',
+                    'feature1-title': 'Smart Scheduling',
+                    'feature1-desc': 'Pick a time and place for pick-up & drop-off that fits your busy life.',
+                    'feature2-title': 'Secure & Transparent',
+                    'feature2-desc': 'Powered by blockchain for secure payments and transparent order tracking.',
+                    'feature3-title': 'Eco-Friendly',
+                    'feature3-desc': 'We prioritize sustainability by partnering with laundries using green methods.',
+                    'feature4-title': 'Quality Guaranteed',
+                    'feature4-desc': 'High-quality cleaning with reliable service, every single time.',
+                    'how-it-works-title': 'Fresh Laundry in 3 Simple Steps',
+                    'step1': '1',
+                    'step1-title': 'Schedule Pick-up',
+                    'step1-desc': 'Open the app and book a convenient time for us to collect your laundry.',
+                    'step2': '2',
+                    'step2-title': 'Expert Care & Finishing',
+                    'step2-desc': 'Our certified partners treat your garments with the utmost care, using eco-friendly products for a perfect wash and press.',
+                    'step3': '3',
+                    'step3-title': 'Receive Fresh Clothes',
+                    'step3-desc': 'We deliver your fresh, clean laundry back to your doorstep at the scheduled time.',
+                    'about-eyebrow': 'Our Mission',
+                    'about-title': 'Pioneering the Future of Clean',
+                    'about-desc': "mQsala is revolutionizing the laundry industry. By integrating cutting-edge technology with a commitment to sustainability and customer satisfaction, we deliver an unparalleled service that empowers both users and local laundry partners.",
+                    'value1-title': 'Trust & Transparency',
+                    'value1-desc': 'Built on secure technology.',
+                    'value2-title': 'Innovation',
+                    'value2-desc': 'Constantly improving your experience.',
+                    'value3-title': 'Sustainability',
+                    'value3-desc': 'Caring for your clothes and the planet.',
+                    'value4-title': 'Customer-Centricity',
+                    'value4-desc': 'You are at the heart of our service.',
+                    'techTitle': 'A Deep Dive into Our Technology',
+                    'techSubtitle': 'Built on a foundation of robust, scalable, and secure enterprise-grade technology.',
+                    'techStack': 'Enterprise-Grade Stack',
+                    'techStackDesc': 'Utilizing a modern stack including React, NestJS, and PostgreSQL, all hosted on AWS for maximum reliability and performance.',
+                    'techArch': 'Microservices Architecture',
+                    'techArchDesc': 'Our backend is built with independent microservices, allowing for greater scalability, faster updates, and improved fault isolation.',
+                    'techPipeline': 'Automated GitOps CI/CD',
+                    'techPipelineDesc': 'Leveraging Jenkins, Argo CD, and Kubernetes for a fully automated pipeline, ensuring rapid, reliable, and consistent deployments.',
                     'roadmap-title': 'Roadmap: The Next Evolution',
                     'roadmap-subtitle': 'Integrating Blockchain & AI for a Smarter Future.',
                     'roadmap-next-title': 'What’s Coming Next',
@@ -703,76 +726,103 @@
                     'privacy-feature2-desc': 'We implement strong, enterprise-grade controls around data access and transaction validation.',
                     'privacy-feature3-title': 'AI is Advisory:',
                     'privacy-feature3-desc': 'AI suggestions help you decide, but you always remain in control of final actions and confirmations.',
-                    'partners-title': 'Success Partners', 
-                    'partners-subtitle': 'Proudly supported by leading organizations driving innovation.', 
+                    'why-title': 'Why mQsala',
+                    'why-subtitle': 'Because convenience is not enough—your trust matters.',
+                    'why-card1-title': 'Transparency you can feel',
+                    'why-card1-desc': 'Track your order through clear milestones—pickup, care, delivery—so you always know what’s happening.',
+                    'why-card2-title': 'Secure & privacy-first by design',
+                    'why-card2-desc': 'We protect your information. The technology works in the background while your data stays safeguarded.',
+                    'why-card3-title': 'Fewer surprises, smoother service',
+                    'why-card3-desc': 'Verified updates improve accountability and reduce confusion—helping us deliver consistent quality.',
+                    'why-card4-title': 'AI support that keeps you in control',
+                    'why-card4-desc': 'Smart assistance helps with questions, updates, and care tips—while you confirm the final actions.',
+                    'why-reassurance': 'Advanced technology doesn’t need to feel complicated. We use it to make laundry simple.',
+                    'partners-title': 'Success Partners',
+                    'partners-subtitle': 'Proudly supported by leading organizations driving innovation.',
+                    'partner-misa': 'MISA',
                     'partner-misa-title': 'Ministry of Investment of Saudi Arabia',
                     'partner-misa-desc': 'We obtained an entrepreneurial MISA license.',
+                    'partner-code': 'CODE',
                     'partner-code-title': 'Center of Digital Entrepreneurship',
                     'partner-code-desc': 'King Saud University CODE Lab.',
+                    'partner-vision': '2030',
                     'partner-vision-title': 'Saudi Vision 2030',
                     'partner-vision-desc': 'Aligned with the Kingdom\'s vision for digital transformation.',
-                    'riyadhOffice': 'Riyadh Office', 
-                    'saudiArabia': 'Saudi Arabia', 
-                    'dubaiOffice': 'Dubai Office', 
-                    'contactUs': 'Contact Us', 
-                    'footer-tagline': 'Laundry, Reimagined.', 
-                    'footer-offices-title': 'Our Offices', 
+                    'newsletter-title': 'Stay Ahead of the Curve',
+                    'newsletter-subtitle': 'Join our mailing list for exclusive updates, launch announcements, and special offers.',
+                    'newsletter-email-label': 'Email address',
+                    'newsletter-placeholder': 'Enter your email',
+                    'newsletter-button': 'Subscribe',
+                    'gdpr-text-1': 'mQsala will use the information you provide here to stay in touch with you and to send updates about our services, launch, offers, and governance tokens.',
+                    'gdpr-checkbox': 'I agree to receive email updates & newsletters',
+                    'gdpr-text-2': 'You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.',
+                    'gdpr-legal': "We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href='https://mailchimp.com/legal/terms' target='_blank' class='underline' data-key='learn-more'>Learn more</a> about Mailchimp's privacy practices.",
+                    'learn-more': 'Learn more',
+                    'footer-tagline': 'Laundry, Reimagined.',
+                    'twitter': 'Twitter',
+                    'telegram': 'Telegram',
+                    'linkedin': 'LinkedIn',
+                    'youtube': 'YouTube',
+                    'footer-offices-title': 'Our Offices',
+                    'riyadhOffice': 'Riyadh Office',
+                    'riyadh-address': 'King Saud University Code Lab,<br>Riyadh, 12372,<br>Saudi Arabia',
+                    'dubaiOffice': 'Dubai Office',
+                    'dubai-address': '18.01-HD-122, Floor Number 18,<br>Sheikh Rashid Tower,<br>Dubai World Trade Centre',
+                    'contactUs': 'Contact Us',
                     'footer-copy': `&copy; ${new Date().getFullYear()} mQsala. All rights reserved.`,
                 },
                 'ar': {
-                    'logo-ar': 'mQsala', 
-                    'nav-features': 'المميزات', 
-                    'nav-how-it-works': 'كيف نعمل', 
-                    'nav-about': 'من نحن', 
-                    'nav-tech': 'التقنية', 
-                    'nav-roadmap': 'خارطة الطريق', 
-                    'nav-partners': 'الشركاء', 
-                    'hero-title': 'مستقبل الغسيل بين يديك.', 
-                    'hero-subtitle': 'تجربة غسيل مبتكرة. جدولة فورية، تتبع شفاف، وعناية فائقة، كل ذلك بلمسة زر.', 
-                    'download-apple': 'قريباً على App Store', 
-                    'download-google': 'قريباً على Google Play', 
-                    'features-title': 'ما يميز مغسلة', 
-                    'features-subtitle': 'اكتشف المزايا الذكية التي تجعلنا الخيار الأول، والمصممة خصيصاً لأسلوب حياتك العصري.', 
-                    'feature1-title': 'جدولة ذكية', 
-                    'feature1-desc': 'اختر وقتاً ومكاناً للاستلام والتوصيل يناسب حياتك المزدحمة.', 
-                    'feature2-title': 'آمن وشفاف', 
-                    'feature2-desc': 'مدعوم بتقنية البلوك تشين لمدفوعات آمنة وتتبع شفاف للطلبات.', 
-                    'feature3-title': 'صديق للبيئة', 
-                    'feature3-desc': 'نعطي الأولوية للاستدامة من خلال الشراكة مع مغاسل تستخدم أساليب خضراء.', 
-                    'feature4-title': 'جودة مضمونة', 
-                    'feature4-desc': 'تنظيف عالي الجودة مع خدمة موثوقة، في كل مرة.', 
-                    'how-it-works-title': 'غسيل نظيف في 3 خطوات بسيطة', 
-                    'step1-title': 'حدد موعد الاستلام', 
-                    'step1-desc': 'افتح التطبيق واحجز وقتاً مناسباً لنا لاستلام ملابسك.', 
-                    'step2-title': 'عناية احترافية ولمسة نهائية متقنة', 
-                    'step2-desc': 'يعتني شركاؤنا المعتمدون بملابسك بعناية فائقة، باستخدام منتجات صديقة للبيئة لغسيل وكيّ مثالي.', 
-                    'step3-title': 'استلم ملابسك نظيفة', 
-                    'step3-desc': 'نعيد إليك ملابسك نظيفة ومنعشة إلى عتبة دارك في الوقت المحدد.', 
-                    'about-eyebrow': 'مهمتنا', 
-                    'about-title': 'نبتكر مستقبل النظافة', 
-                    'about-desc': 'تُحدث مغسلة ثورة في عالم الغسيل. عبر دمج أحدث التقنيات مع الالتزام بالاستدامة ورضا العملاء، نقدم خدمة لا مثيل لها تمكّن المستخدمين وشركاءنا من المغاسل المحلية على حد سواء.', 
-                    'value1-title': 'الثقة والشفافية', 
-                    'value1-desc': 'مبنية على تقنية آمنة.', 
-                    'value2-title': 'الابتكار', 
-                    'value2-desc': 'تحسين تجربتك باستمرار.', 
-                    'value3-title': 'الاستدامة', 
-                    'value3-desc': 'نهتم بملابسك وكوكبنا.', 
-                    'value4-title': 'التركيز على العميل', 
-                    'value4-desc': 'أنت في قلب خدمتنا.', 
-                    'newsletter-title': 'ابقَ على اطلاع دائم', 
-                    'newsletter-subtitle': 'انضم إلى قائمتنا البريدية للحصول على التحديثات الحصرية وإعلانات الإطلاق والعروض الخاصة.', 
-                    'newsletter-email-label': 'البريد الإلكتروني', 
-                    'newsletter-placeholder': 'أدخل بريدك الإلكتروني', 
-                    'newsletter-button': 'اشترك', 
-                    'gdpr-checkbox': 'أوافق على تلقي تحديثات البريد الإلكتروني والنشرات الإخبارية', 
-                    'techTitle': 'نظرة عميقة في تقنيتنا', 
-                    'techSubtitle': 'مبنية على أساس تقنية قوية وقابلة للتطوير وآمنة على مستوى المؤسسات.', 
-                    'techStack': 'مكدس تقني للمؤسسات', 
-                    'techStackDesc': 'استخدام مكدس حديث يتضمن React و NestJS و PostgreSQL ، وكلها مستضافة على AWS لتحقيق أقصى قدر من الموثوقية والأداء.', 
-                    'techArch': 'بنية الخدمات المصغرة', 
-                    'techArchDesc': 'تم بناء الواجهة الخلفية لدينا بخدمات مصغرة مستقلة ، مما يسمح بقابلية أكبر للتوسع وتحديثات أسرع وعزل أفضل للأخطاء.', 
-                    'techPipeline': 'CI/CD آلي بـ GitOps', 
-                    'techPipelineDesc': 'الاستفادة من Jenkins و Argo CD و Kubernetes لخط أنابيب مؤتمت بالكامل ، مما يضمن عمليات نشر سريعة وموثوقة ومتسقة.', 
+                    'logo-text': 'مغسلة',
+                    'nav-features': 'المميزات',
+                    'nav-how-it-works': 'كيف نعمل',
+                    'nav-about': 'من نحن',
+                    'nav-tech': 'التقنية',
+                    'nav-roadmap': 'خارطة الطريق',
+                    'nav-partners': 'الشركاء',
+                    'open-main-menu': 'افتح القائمة الرئيسية',
+                    'hero-title': 'مستقبل الغسيل بين يديك.',
+                    'hero-subtitle': 'تجربة غسيل مبتكرة. جدولة فورية، تتبع شفاف، وعناية فائقة، كل ذلك بلمسة زر.',
+                    'download-apple': 'قريباً على App Store',
+                    'download-google': 'قريباً على Google Play',
+                    'features-title': 'ما يميز مغسلة',
+                    'features-subtitle': 'اكتشف المزايا الذكية التي تجعلنا الخيار الأول، والمصممة خصيصاً لأسلوب حياتك العصري.',
+                    'feature1-title': 'جدولة ذكية',
+                    'feature1-desc': 'اختر وقتاً ومكاناً للاستلام والتوصيل يناسب حياتك المزدحمة.',
+                    'feature2-title': 'آمن وشفاف',
+                    'feature2-desc': 'مدعوم بتقنية البلوك تشين لمدفوعات آمنة وتتبع شفاف للطلبات.',
+                    'feature3-title': 'صديق للبيئة',
+                    'feature3-desc': 'نعطي الأولوية للاستدامة من خلال الشراكة مع مغاسل تستخدم أساليب خضراء.',
+                    'feature4-title': 'جودة مضمونة',
+                    'feature4-desc': 'تنظيف عالي الجودة مع خدمة موثوقة، في كل مرة.',
+                    'how-it-works-title': 'غسيل نظيف في 3 خطوات بسيطة',
+                    'step1': '١',
+                    'step1-title': 'حدد موعد الاستلام',
+                    'step1-desc': 'افتح التطبيق واحجز وقتاً مناسباً لنا لاستلام ملابسك.',
+                    'step2': '٢',
+                    'step2-title': 'عناية احترافية ولمسة نهائية متقنة',
+                    'step2-desc': 'يعتني شركاؤنا المعتمدون بملابسك بعناية فائقة، باستخدام منتجات صديقة للبيئة لغسيل وكيّ مثالي.',
+                    'step3': '٣',
+                    'step3-title': 'استلم ملابسك نظيفة',
+                    'step3-desc': 'نعيد إليك ملابسك نظيفة ومنعشة إلى عتبة دارك في الوقت المحدد.',
+                    'about-eyebrow': 'مهمتنا',
+                    'about-title': 'نبتكر مستقبل النظافة',
+                    'about-desc': 'تُحدث مغسلة ثورة في عالم الغسيل. عبر دمج أحدث التقنيات مع الالتزام بالاستدامة ورضا العملاء، نقدم خدمة لا مثيل لها تمكّن المستخدمين وشركاءنا من المغاسل المحلية على حد سواء.',
+                    'value1-title': 'الثقة والشفافية',
+                    'value1-desc': 'مبنية على تقنية آمنة.',
+                    'value2-title': 'الابتكار',
+                    'value2-desc': 'تحسين تجربتك باستمرار.',
+                    'value3-title': 'الاستدامة',
+                    'value3-desc': 'نهتم بملابسك وكوكبنا.',
+                    'value4-title': 'التركيز على العميل',
+                    'value4-desc': 'أنت في قلب خدمتنا.',
+                    'techTitle': 'نظرة عميقة في تقنيتنا',
+                    'techSubtitle': 'مبنية على أساس تقنية قوية وقابلة للتطوير وآمنة على مستوى المؤسسات.',
+                    'techStack': 'مكدس تقني للمؤسسات',
+                    'techStackDesc': 'استخدام مكدس حديث يتضمن React و NestJS و PostgreSQL ، وكلها مستضافة على AWS لتحقيق أقصى قدر من الموثوقية والأداء.',
+                    'techArch': 'بنية الخدمات المصغرة',
+                    'techArchDesc': 'تم بناء الواجهة الخلفية لدينا بخدمات مصغرة مستقلة ، مما يسمح بقابلية أكبر للتوسع وتحديثات أسرع وعزل أفضل للأخطاء.',
+                    'techPipeline': 'CI/CD آلي بـ GitOps',
+                    'techPipelineDesc': 'الاستفادة من Jenkins و Argo CD و Kubernetes لخط أنابيب مؤتمت بالكامل ، مما يضمن عمليات نشر سريعة وموثوقة ومتسقة.',
                     'roadmap-title': 'خارطة الطريق: التطور القادم',
                     'roadmap-subtitle': 'دمج البلوك تشين والذكاء الاصطناعي لمستقبل أذكى.',
                     'roadmap-next-title': 'ما هو قادم بعد ذلك',
@@ -793,20 +843,49 @@
                     'privacy-feature2-desc': 'نطبق ضوابط قوية على مستوى المؤسسات حول الوصول إلى البيانات والتحقق من صحة المعاملات.',
                     'privacy-feature3-title': 'الذكاء الاصطناعي استشاري:',
                     'privacy-feature3-desc': 'تساعدك اقتراحات الذكاء الاصطناعي على اتخاذ القرار، لكنك تظل دائمًا المتحكم في الإجراءات والتأكيدات النهائية.',
-                    'partners-title': 'شركاؤنا في النجاح', 
-                    'partners-subtitle': 'مدعومون بفخر من قبل منظمات رائدة تقود الابتكار.', 
+                    'why-title': 'لماذا mQsala',
+                    'why-subtitle': 'لأن الراحة وحدها لا تكفي — ثقتك هي الأهم.',
+                    'why-card1-title': 'شفافية تطمئنك',
+                    'why-card1-desc': 'تابع طلبك عبر مراحل واضحة — الاستلام، العناية، التسليم — لتعرف دائمًا ما يحدث.',
+                    'why-card2-title': 'أمان وخصوصية أولاً',
+                    'why-card2-desc': 'نحمي معلوماتك. التقنية تعمل في الخلفية بينما تبقى بياناتك محفوظة.',
+                    'why-card3-title': 'خدمة أكثر سلاسة وموثوقية',
+                    'why-card3-desc': 'التحديثات الموثّقة تعزز المسؤولية وتقلل الالتباس — لنقدّم جودة ثابتة.',
+                    'why-card4-title': 'مساعدة ذكية تُبقيك المتحكم',
+                    'why-card4-desc': 'الذكاء الاصطناعي يساعدك في الاستفسارات والتحديثات ونصائح العناية — وأنت من يؤكد الخطوات النهائية.',
+                    'why-reassurance': 'حتى التقنية المتقدمة لا يجب أن تكون معقدة. نحن نستخدمها لتجعل الغسيل أسهل.',
+                    'partners-title': 'شركاؤنا في النجاح',
+                    'partners-subtitle': 'مدعومون بفخر من قبل منظمات رائدة تقود الابتكار.',
+                    'partner-misa': 'MISA',
                     'partner-misa-title': 'وزارة الاستثمار السعودية',
                     'partner-misa-desc': 'حصلنا على ترخيص ريادي من وزارة الاستثمار.',
+                    'partner-code': 'CODE',
                     'partner-code-title': 'مركز ريادة الأعمال الرقمية',
                     'partner-code-desc': 'معمل CODE بجامعة الملك سعود.',
+                    'partner-vision': '2030',
                     'partner-vision-title': 'رؤية السعودية 2030',
                     'partner-vision-desc': 'متوافقون مع رؤية المملكة للتحول الرقمي.',
-                    'riyadhOffice': 'مكتب الرياض', 
-                    'saudiArabia': 'المملكة العربية السعودية', 
-                    'dubaiOffice': 'مكتب دبي', 
-                    'contactUs': 'اتصل بنا', 
-                    'footer-tagline': 'الغسيل، بمفهوم جديد.', 
-                    'footer-offices-title': 'مكاتبنا', 
+                    'newsletter-title': 'ابقَ على اطلاع دائم',
+                    'newsletter-subtitle': 'انضم إلى قائمتنا البريدية للحصول على التحديثات الحصرية وإعلانات الإطلاق والعروض الخاصة.',
+                    'newsletter-email-label': 'البريد الإلكتروني',
+                    'newsletter-placeholder': 'أدخل بريدك الإلكتروني',
+                    'newsletter-button': 'اشترك',
+                    'gdpr-text-1': 'ستستخدم مغسلة المعلومات التي تقدمها هنا للبقاء على اتصال معك وإرسال تحديثات حول خدماتنا والإطلاق والعروض ورموز الحوكمة.',
+                    'gdpr-checkbox': 'أوافق على تلقي تحديثات البريد الإلكتروني والنشرات الإخبارية',
+                    'gdpr-text-2': 'يمكنك إلغاء الاشتراك في أي وقت بالنقر فوق الرابط الموجود في تذييل رسائل البريد الإلكتروني الخاصة بنا. للحصول على معلومات حول ممارسات الخصوصية لدينا ، يرجى زيارة موقعنا على شبكة الإنترنت.',
+                    'gdpr-legal': "نحن نستخدم Mailchimp كمنصة تسويق لدينا. بالنقر أدناه للاشتراك ، فإنك تقر بأن معلوماتك سيتم نقلها إلى Mailchimp للمعالجة. <a href='https://mailchimp.com/legal/terms' target='_blank' class='underline' data-key='learn-more'>اعرف المزيد</a> عن ممارسات الخصوصية في Mailchimp.",
+                    'learn-more': 'اعرف المزيد',
+                    'footer-tagline': 'الغسيل، بمفهوم جديد.',
+                    'twitter': 'تويتر',
+                    'telegram': 'تلجرام',
+                    'linkedin': 'لينكد إن',
+                    'youtube': 'يوتيوب',
+                    'footer-offices-title': 'مكاتبنا',
+                    'riyadhOffice': 'مكتب الرياض',
+                    'riyadh-address': 'معمل CODE بجامعة الملك سعود,<br>الرياض, 12372,<br>المملكة العربية السعودية',
+                    'dubaiOffice': 'مكتب دبي',
+                    'dubai-address': '18.01-HD-122, الطابق 18,<br>برج الشيخ راشد,<br>مركز دبي التجاري العالمي',
+                    'contactUs': 'اتصل بنا',
                     'footer-copy': `&copy; ${new Date().getFullYear()} مغسلة. جميع الحقوق محفوظة.`,
                 }
             };

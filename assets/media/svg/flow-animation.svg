@@ -35,22 +35,17 @@
     <line class="flow-line" x1="50" y1="50" x2="750" y2="50" stroke="#0055A4" stroke-width="4"/>
     <g class="flow-node">
         <circle cx="50" cy="50" r="10" fill="#E7C717"/>
-        <text x="50" y="80" text-anchor="middle" fill="#222222">Request</text>
     </g>
     <g class="flow-node">
         <circle cx="200" cy="50" r="10" fill="#E7C717"/>
-        <text x="200" y="80" text-anchor="middle" fill="#222222">Pickup</text>
     </g>
     <g class="flow-node">
         <circle cx="350" cy="50" r="10" fill="#E7C717"/>
-        <text x="350" y="80" text-anchor="middle" fill="#222222">Partner Laundry</text>
     </g>
     <g class="flow-node">
         <circle cx="500" cy="50" r="10" fill="#E7C717"/>
-        <text x="500" y="80" text-anchor="middle" fill="#222222">Delivery</text>
     </g>
     <g class="flow-node">
         <circle cx="650" cy="50" r="10" fill="#E7C717"/>
-        <text x="650" y="80" text-anchor="middle" fill="#222222">Confirmation</text>
     </g>
 </svg>
