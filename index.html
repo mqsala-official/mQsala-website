@@ -379,67 +379,83 @@
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-key="roadmap-subtitle">Integrating Blockchain & AI for a Smarter Future.</p>
                 </div>
                 
-                <!-- Architecture & Features Grid -->
+                <!-- Customer-Facing Features Grid -->
                 <div class="grid lg:grid-cols-2 gap-12">
-                    
-                    <!-- Key Features -->
-                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm fade-in-up">
+
+                    <!-- Card 1: What’s coming next -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm fade-in-up feature-card">
                         <h3 class="text-2xl font-bold text-royal-blue mb-6 flex items-center">
-                            <i class="fas fa-star mr-3 text-golden-yellow"></i>
-                            <span data-key="roadmap-features-title">Key Features</span>
+                            <i class="fas fa-bolt mr-3 text-golden-yellow"></i>
+                            <span data-key="roadmap-next-title">What’s Coming Next</span>
                         </h3>
-                        <ul class="space-y-4">
+                        <ul class="space-y-5">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <i class="fas fa-tasks text-green-500 mt-1 mr-3 rtl:ml-3"></i>
                                 <div>
-                                    <strong class="text-midnight-navy" data-key="feature-fabric-title">Fabric Network:</strong>
-                                    <p class="text-gray-600 text-sm mt-1" data-key="feature-fabric-desc">Single channel, private data collections, and event ledger for pickup/delivery, items, finance, and settlements.</p>
+                                    <strong class="text-midnight-navy" data-key="next-feature1-title">Verified Order Timeline:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="next-feature1-desc">A tamper-evident tracking timeline of pickup, cleaning, and delivery milestones.</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <i class="fas fa-route text-green-500 mt-1 mr-3 rtl:ml-3"></i>
                                 <div>
-                                    <strong class="text-midnight-navy" data-key="feature-gateway-title">Gateway API:</strong>
-                                    <p class="text-gray-600 text-sm mt-1" data-key="feature-gateway-desc">RBAC, webhooks, off-chain storage abstraction, and AI endpoints powered by OpenAI tool-calling or stub provider.</p>
+                                    <strong class="text-midnight-navy" data-key="next-feature2-title">Smart ETA & Notifications:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="next-feature2-desc">More accurate arrival estimates with proactive status updates.</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <i class="fas fa-brain text-green-500 mt-1 mr-3 rtl:ml-3"></i>
                                 <div>
-                                    <strong class="text-midnight-navy" data-key="feature-compliance-title">Compliance-Friendly:</strong>
-                                    <p class="text-gray-600 text-sm mt-1" data-key="feature-compliance-desc">PII minimized, hashes only on-chain, and AI outputs advisory for financial actions.</p>
+                                    <strong class="text-midnight-navy" data-key="next-feature3-title">AI Care Coach:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="next-feature3-desc">Helpful garment-care tips (fabric type, stain guidance) to improve results.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-check text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <div>
+                                    <strong class="text-midnight-navy" data-key="next-feature4-title">Smarter Scheduling:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="next-feature4-desc">Better pickup/drop-off window recommendations based on availability and route efficiency.</p>
                                 </div>
                             </li>
                              <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <i class="fas fa-headset text-green-500 mt-1 mr-3 rtl:ml-3"></i>
                                 <div>
-                                    <strong class="text-midnight-navy" data-key="feature-sdk-title">Developer Ready:</strong>
-                                    <p class="text-gray-600 text-sm mt-1" data-key="feature-sdk-desc">OpenAPI spec, Postman collection, and generated TypeScript SDK for seamless integration.</p>
+                                    <strong class="text-midnight-navy" data-key="next-feature5-title">AI-Powered Support:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="next-feature5-desc">Faster answers for tracking, rescheduling, and common questions.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Architecture Overview -->
-                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm fade-in-up delay-1">
+                    <!-- Card 2: Privacy & Trust -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm fade-in-up delay-1 feature-card">
                         <h3 class="text-2xl font-bold text-royal-blue mb-6 flex items-center">
-                            <i class="fas fa-network-wired mr-3 text-golden-yellow"></i>
-                            <span data-key="roadmap-arch-title">Architecture Overview</span>
+                            <i class="fas fa-shield-alt mr-3 text-golden-yellow"></i>
+                            <span data-key="roadmap-privacy-title">Privacy & Trust (Built-In)</span>
                         </h3>
-                         <div class="space-y-6">
-                            <div class="relative pl-4 border-l-2 border-royal-blue rtl:border-l-0 rtl:border-r-2 rtl:pr-4">
-                                <h4 class="font-bold text-midnight-navy" data-key="arch-chaincode-title">Chaincode (Go)</h4>
-                                <p class="text-gray-600 text-sm" data-key="arch-chaincode-desc">Stores event envelopes and finance state with endorsement rules. Ensures data integrity by storing payload hashes only.</p>
-                            </div>
-                            <div class="relative pl-4 border-l-2 border-royal-blue rtl:border-l-0 rtl:border-r-2 rtl:pr-4">
-                                <h4 class="font-bold text-midnight-navy" data-key="arch-gateway-title">Gateway (Node.js/TypeScript)</h4>
-                                <p class="text-gray-600 text-sm" data-key="arch-gateway-desc">Authenticates users, enforces RBAC, orchestrates Fabric transactions, manages webhooks, and integrates AI agents.</p>
-                            </div>
-                            <div class="relative pl-4 border-l-2 border-royal-blue rtl:border-l-0 rtl:border-r-2 rtl:pr-4">
-                                <h4 class="font-bold text-midnight-navy" data-key="arch-storage-title">Off-chain Storage</h4>
-                                <p class="text-gray-600 text-sm" data-key="arch-storage-desc">Abstraction for payloads (local filesystem in dev; S3-compatible stub ready) to keep heavy data off the blockchain.</p>
-                            </div>
-                         </div>
+                         <ul class="space-y-5">
+                            <li class="flex items-start">
+                                <i class="fas fa-lock text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <div>
+                                    <strong class="text-midnight-navy" data-key="privacy-feature1-title">Privacy-First Design:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="privacy-feature1-desc">Sensitive details are kept private, with only necessary verification data stored on the ledger.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-user-shield text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <div>
+                                    <strong class="text-midnight-navy" data-key="privacy-feature2-title">Secure by Design:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="privacy-feature2-desc">We implement strong, enterprise-grade controls around data access and transaction validation.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hand-pointer text-green-500 mt-1 mr-3 rtl:ml-3"></i>
+                                <div>
+                                    <strong class="text-midnight-navy" data-key="privacy-feature3-title">AI is Advisory:</strong>
+                                    <p class="text-gray-600 text-sm mt-1" data-key="privacy-feature3-desc">AI suggestions help you decide, but you always remain in control of final actions and confirmations.</p>
+                                </div>
+                            </li>
+                         </ul>
                     </div>
                 </div>
             </div>
@@ -642,22 +658,24 @@
                     'techPipelineDesc': 'Leveraging Jenkins, Argo CD, and Kubernetes for a fully automated pipeline, ensuring rapid, reliable, and consistent deployments.', 
                     'roadmap-title': 'Roadmap: The Next Evolution',
                     'roadmap-subtitle': 'Integrating Blockchain & AI for a Smarter Future.',
-                    'roadmap-features-title': 'Key Features',
-                    'feature-fabric-title': 'Fabric Network:',
-                    'feature-fabric-desc': 'Single channel, private data collections, and event ledger for pickup/delivery, items, finance, and settlements.',
-                    'feature-gateway-title': 'Gateway API:',
-                    'feature-gateway-desc': 'RBAC, webhooks, off-chain storage abstraction, and AI endpoints powered by OpenAI tool-calling or stub provider.',
-                    'feature-compliance-title': 'Compliance-Friendly:',
-                    'feature-compliance-desc': 'PII minimized, hashes only on-chain, and AI outputs advisory for financial actions.',
-                    'feature-sdk-title': 'Developer Ready:',
-                    'feature-sdk-desc': 'OpenAPI spec, Postman collection, and generated TypeScript SDK for seamless integration.',
-                    'roadmap-arch-title': 'Architecture Overview',
-                    'arch-chaincode-title': 'Chaincode (Go)',
-                    'arch-chaincode-desc': 'Stores event envelopes and finance state with endorsement rules. Ensures data integrity by storing payload hashes only.',
-                    'arch-gateway-title': 'Gateway (Node.js/TypeScript)',
-                    'arch-gateway-desc': 'Authenticates users, enforces RBAC, orchestrates Fabric transactions, manages webhooks, and integrates AI agents.',
-                    'arch-storage-title': 'Off-chain Storage',
-                    'arch-storage-desc': 'Abstraction for payloads (local filesystem in dev; S3-compatible stub ready) to keep heavy data off the blockchain.',
+                    'roadmap-next-title': 'What’s Coming Next',
+                    'next-feature1-title': 'Verified Order Timeline:',
+                    'next-feature1-desc': 'A tamper-evident tracking timeline of pickup, cleaning, and delivery milestones.',
+                    'next-feature2-title': 'Smart ETA & Notifications:',
+                    'next-feature2-desc': 'More accurate arrival estimates with proactive status updates.',
+                    'next-feature3-title': 'AI Care Coach:',
+                    'next-feature3-desc': 'Helpful garment-care tips (fabric type, stain guidance) to improve results.',
+                    'next-feature4-title': 'Smarter Scheduling:',
+                    'next-feature4-desc': 'Better pickup/drop-off window recommendations based on availability and route efficiency.',
+                    'next-feature5-title': 'AI-Powered Support:',
+                    'next-feature5-desc': 'Faster answers for tracking, rescheduling, and common questions.',
+                    'roadmap-privacy-title': 'Privacy & Trust (Built-In)',
+                    'privacy-feature1-title': 'Privacy-First Design:',
+                    'privacy-feature1-desc': 'Sensitive details are kept private, with only necessary verification data stored on the ledger.',
+                    'privacy-feature2-title': 'Secure by Design:',
+                    'privacy-feature2-desc': 'We implement strong, enterprise-grade controls around data access and transaction validation.',
+                    'privacy-feature3-title': 'AI is Advisory:',
+                    'privacy-feature3-desc': 'AI suggestions help you decide, but you always remain in control of final actions and confirmations.',
                     'partners-title': 'Success Partners', 
                     'partners-subtitle': 'Proudly supported by leading organizations driving innovation.', 
                     'partner-misa-title': 'Ministry of Investment of Saudi Arabia',
@@ -730,22 +748,24 @@
                     'techPipelineDesc': 'الاستفادة من Jenkins و Argo CD و Kubernetes لخط أنابيب مؤتمت بالكامل ، مما يضمن عمليات نشر سريعة وموثوقة ومتسقة.', 
                     'roadmap-title': 'خارطة الطريق: التطور القادم',
                     'roadmap-subtitle': 'دمج البلوك تشين والذكاء الاصطناعي لمستقبل أذكى.',
-                    'roadmap-features-title': 'الميزات الرئيسية',
-                    'feature-fabric-title': 'شبكة Fabric:',
-                    'feature-fabric-desc': 'قناة واحدة، مجموعات بيانات خاصة، وسجل أحداث للاستلام/التسليم، العناصر، المالية، والتسويات.',
-                    'feature-gateway-title': 'بوابة API:',
-                    'feature-gateway-desc': 'تحكم في الوصول، Webhooks، تخزين خارج السلسلة، ونقاط نهاية الذكاء الاصطناعي.',
-                    'feature-compliance-title': 'صديق للامتثال:',
-                    'feature-compliance-desc': 'تقليل البيانات الشخصية، تخزين التجزئة فقط على السلسلة، ومخرجات الذكاء الاصطناعي استشارية.',
-                    'feature-sdk-title': 'جاهز للمطورين:',
-                    'feature-sdk-desc': 'مواصفات OpenAPI، مجموعة Postman، و SDK TypeScript للتكامل السلس.',
-                    'roadmap-arch-title': 'نظرة عامة على البنية',
-                    'arch-chaincode-title': 'Chaincode (Go)',
-                    'arch-chaincode-desc': 'يخزن مظاريف الأحداث وحالة التمويل مع قواعد المصادقة. يضمن سلامة البيانات بتخزين تجزئة البيانات فقط.',
-                    'arch-gateway-title': 'Gateway (Node.js/TypeScript)',
-                    'arch-gateway-desc': 'يصادق المستخدمين، يفرض تحكم الوصول، ينظم معاملات Fabric، ويدير وكلاء الذكاء الاصطناعي.',
-                    'arch-storage-title': 'التخزين خارج السلسلة',
-                    'arch-storage-desc': 'تجريد للأحمال (نظام ملفات محلي في التطوير؛ متوافق مع S3) للحفاظ على خفة البلوك تشين.',
+                    'roadmap-next-title': 'ما هو قادم بعد ذلك',
+                    'next-feature1-title': 'جدول زمني موثق للطلب:',
+                    'next-feature1-desc': 'سجل تتبع مقاوم للتلاعب لمراحل الاستلام والتنظيف والتسليم.',
+                    'next-feature2-title': 'تقديرات وصول ذكية وإشعارات:',
+                    'next-feature2-desc': 'تقديرات وصول أكثر دقة مع تحديثات استباقية لحالة الطلب.',
+                    'next-feature3-title': 'مدرب العناية بالملابس الذكي:',
+                    'next-feature3-desc': 'نصائح مفيدة للعناية بالملابس (نوع القماش، إرشادات البقع) لتحسين النتائج.',
+                    'next-feature4-title': 'جدولة أذكى:',
+                    'next-feature4-desc': 'توصيات أفضل لمواعيد الاستلام والتسليم بناءً على التوفر وكفاءة المسار.',
+                    'next-feature5-title': 'دعم مدعوم بالذكاء الاصطناعي:',
+                    'next-feature5-desc': 'إجابات أسرع لتتبع الطلبات، إعادة الجدولة، والأسئلة الشائعة.',
+                    'roadmap-privacy-title': 'الخصوصية والثقة (مدمجة)',
+                    'privacy-feature1-title': 'تصميم يضع الخصوصية أولاً:',
+                    'privacy-feature1-desc': 'تبقى التفاصيل الحساسة خاصة، مع تخزين بيانات التحقق الضرورية فقط في السجل.',
+                    'privacy-feature2-title': 'آمن بالتصميم:',
+                    'privacy-feature2-desc': 'نطبق ضوابط قوية على مستوى المؤسسات حول الوصول إلى البيانات والتحقق من صحة المعاملات.',
+                    'privacy-feature3-title': 'الذكاء الاصطناعي استشاري:',
+                    'privacy-feature3-desc': 'تساعدك اقتراحات الذكاء الاصطناعي على اتخاذ القرار، لكنك تظل دائمًا المتحكم في الإجراءات والتأكيدات النهائية.',
                     'partners-title': 'شركاؤنا في النجاح', 
                     'partners-subtitle': 'مدعومون بفخر من قبل منظمات رائدة تقود الابتكار.', 
                     'partner-misa-title': 'وزارة الاستثمار السعودية',
