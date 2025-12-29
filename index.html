@@ -3,11 +3,1506 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mQsala | Redirect</title>
-    <meta http-equiv="refresh" content="0; url=/ar/">
-    <link rel="canonical" href="/ar/">
+    
+    <!-- ─── SEO & Social Meta Tags (Optimized) ──────────────────────── -->
+    <title>mQsala | Next-Gen Smart Laundry Service with Blockchain & AI</title>
+    <meta name="description" content="mQsala offers a premium on-demand laundry service in Riyadh and Dubai, integrating Blockchain and AI for transparency, security, and efficiency.">
+    <meta name="keywords" content="mQsala, smart laundry Riyadh, laundry delivery Dubai, on-demand service, AI laundry, Blockchain logistics, Hyperledger Fabric, Saudi Arabia, Dubai, MENA, tech startup, مغسلة, غسيل وتوصيل الرياض, خدمة غسيل ملابس دبي, تقنية بلوكتشين, ذكاء اصطناعي">
+    <meta name="author" content="mQsala">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/favicon-32%20no%20background.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/favcoin-180.png">
+
+    <!-- Canonical & Hreflang Tags -->
+    <link rel="canonical" href="https://www.mqsala.com/">
+    <link rel="alternate" hreflang="en" href="https://www.mqsala.com/">
+    <link rel="alternate" hreflang="ar" href="https://www.mqsala.com/ar">
+    <link rel="alternate" hreflang="x-default" href="https://www.mqsala.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mqsala.com/">
+    <meta property="og:title" content="mQsala | The Future of Laundry with AI & Blockchain">
+    <meta property="og:description" content="Discover mQsala: The revolutionary on-demand laundry service integrating AI and Blockchain for transparency and efficiency.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/og-card-1200x630.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="mQsala">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.mqsala.com/">
+    <meta name="twitter:title" content="mQsala | Smart Laundry Service with AI & Blockchain">
+    <meta name="twitter:description" content="Seamless laundry service meets advanced technology. Learn about mQsala's on-demand app powered by AI and Hyperledger Fabric.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/og-card-1200x630.png">
+    <meta name="twitter:creator" content="@mQsala_official">
+
+    <!-- ─── Schema.org Structured Data ──────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Corporation",
+          "name": "mQsala",
+          "url": "https://www.mqsala.com/",
+          "logo": "https://raw.githubusercontent.com/mqsala-official/ico-website/main/assets/logo/favcoin-180.png",
+          "foundingDate": "2024",
+          "founder": [
+            {
+              "@type": "Person",
+              "name": "mQsala Founders" 
+            }
+          ],
+          "address": [
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "King Saud University Code Lab",
+              "addressLocality": "Riyadh",
+              "postalCode": "12372",
+              "addressCountry": "SA"
+            },
+            {
+              "@type": "PostalAddress",
+              "streetAddress": "18.01-HD-122, Floor Number 18, Sheikh Rashid Tower",
+              "addressLocality": "Dubai",
+              "addressRegion": "Dubai",
+              "addressCountry": "AE"
+            }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "Info@mqsala.com"
+          },
+          "sameAs": [
+            "https://twitter.com/mQsala_official",
+            "https://t.me/mqsala_official",
+            "https://www.linkedin.com/company/mqsala",
+            "https://www.youtube.com/@mqsalaofficial"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.mqsala.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.mqsala.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- ─── Other Head Elements ──────────────────────────────── -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        mono: ['Courier New', 'monospace'],
+                    },
+                    colors: {
+                        'royal-blue': '#1e40af',
+                        'golden-yellow': '#fbbf24',
+                        'midnight-navy': '#1e3a8a',
+                        'tech-cyan': '#06b6d4',
+                        'tech-dark': '#0f172a',
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'pulse-fast': 'pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'bounce-slight': 'bounce-slight 2s infinite',
+                        'flow-h': 'flowHorizontal 2s linear infinite',
+                        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+                        'grow-line': 'growLine 1s ease-out forwards',
+                        'scan-down': 'scanDown 2s linear infinite',
+                        'pop-in': 'popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+                        'fly-right': 'flyRight 1.5s ease-in-out forwards',
+                        'drive': 'drive 1s ease-in-out infinite alternate',
+                        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                        'radar': 'radar 4s linear infinite',
+                        'matrix': 'matrix 20s linear infinite',
+                        'scroll-up-fast': 'scrollUp 2s linear infinite',
+                        'scroll-down-fast': 'scrollDown 5s linear infinite',
+                        'grid-move': 'gridMove 0.5s linear infinite',
+                        'chain-move': 'chainMove 2s linear infinite',
+                        'car-path': 'carPath 3s linear infinite',
+                        'flash-random': 'flashRandom 0.2s steps(2) infinite',
+                    },
+                    keyframes: {
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+                        'bounce-slight': { '0%, 100%': { transform: 'translateY(-5%)' }, '50%': { transform: 'translateY(0)' } },
+                        flowHorizontal: { '0%': { backgroundPosition: '0 0' }, '100%': { backgroundPosition: '20px 0' } },
+                        fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        growLine: { '0%': { width: '0%' }, '100%': { width: '100%' } },
+                        scanDown: { '0%': { top: '0%', opacity: 0 }, '10%': { opacity: 1 }, '90%': { opacity: 1 }, '100%': { top: '100%', opacity: 0 } },
+                        popIn: { '0%': { opacity: '0', transform: 'scale(0.5)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+                        flyRight: { '0%': { left: '80%', opacity: 1 }, '100%': { left: '20%', opacity: 0 } },
+                        drive: { '0%': { transform: 'translateY(0)' }, '100%': { transform: 'translateY(-2px)' } },
+                        radar: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+                        matrix: { '0%': { backgroundPosition: '0% 0%' }, '100%': { backgroundPosition: '0% 100%' } },
+                        scrollUp: { '0%': { transform: 'translateY(0)' }, '100%': { transform: 'translateY(-50%)' } },
+                        scrollDown: { '0%': { transform: 'translateY(-50%)' }, '100%': { transform: 'translateY(0)' } },
+                        gridMove: { '0%': { backgroundPosition: '0 0' }, '100%': { backgroundPosition: '0 40px' } },
+                        chainMove: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-100%)' } },
+                        carPath: { '0%': { left: '-10%', top: '80%', opacity: 0 }, '10%': { opacity: 1 }, '90%': { opacity: 1 }, '100%': { left: '110%', top: '20%', opacity: 0 } },
+                        flashRandom: { '0%': { opacity: 1 }, '50%': { opacity: 0.5 }, '100%': { opacity: 1 } }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .vs-badge { background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%); box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4); }
+
+        /* Blockchain Simulation Specifics */
+        .sim-block { transition: all 0.5s ease; }
+        .sim-block.active { border-color: #fbbf24; box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
+        .connecting-line { height: 4px; background: #e5e7eb; position: absolute; top: 50%; right: 100%; width: 30px; z-index: 0; transform: translateY(-50%); }
+        @media (min-width: 768px) { .connecting-line { width: 50px; right: -50px; } }
+        .data-flow { background: linear-gradient(90deg, #1e3a8a 50%, transparent 50%); background-size: 20px 20px; animation: flowHorizontal 1s linear infinite reverse; }
+
+        /* AI Simulation Specifics (Updated to Brand Colors) */
+        .scan-line { position: absolute; left: 0; width: 100%; height: 2px; background: #fbbf24; box-shadow: 0 0 10px #fbbf24; z-index: 20; }
+
+        /* High-Tech Logistics Style */
+        .tech-bg { background-color: #0f172a; background-image: linear-gradient(0deg, transparent 24%, rgba(6, 182, 212, .05) 25%, rgba(6, 182, 212, .05) 26%, transparent 27%, transparent 74%, rgba(6, 182, 212, .05) 75%, rgba(6, 182, 212, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(6, 182, 212, .05) 25%, rgba(6, 182, 212, .05) 26%, transparent 27%, transparent 74%, rgba(6, 182, 212, .05) 75%, rgba(6, 182, 212, .05) 76%, transparent 77%, transparent); background-size: 50px 50px; }
+        .hud-border { border: 1px solid rgba(6, 182, 212, 0.3); box-shadow: 0 0 10px rgba(6, 182, 212, 0.1); position: relative; }
+        .hud-border::before, .hud-border::after { content: ''; position: absolute; width: 8px; height: 8px; border: 2px solid #06b6d4; transition: all 0.3s ease; }
+        .hud-border::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+        .hud-border::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+        .hud-text { font-family: 'Courier New', monospace; }
+        .radar-sweep { background: conic-gradient(from 0deg, transparent 0deg, rgba(6, 182, 212, 0.1) 60deg, rgba(6, 182, 212, 0.4) 90deg, transparent 91deg); border-radius: 50%; animation: radar 4s linear infinite; }
+
+        /* Extreme Chaos Styles */
+        .code-rain { color: #00ff41; font-family: 'Courier New', monospace; font-size: 10px; writing-mode: vertical-rl; text-orientation: upright; white-space: nowrap; text-shadow: 0 0 2px #00ff41; opacity: 0.7; }
+        .matrix-bg { background-color: #000000; }
+        .perspective-grid { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(to right, rgba(0, 255, 65, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 255, 65, 0.2) 1px, transparent 1px); background-size: 30px 30px; transform: perspective(300px) rotateX(45deg); transform-origin: bottom; animation: gridMove 0.2s linear infinite; opacity: 0.4; }
+        .log-text { font-family: 'Courier New', monospace; font-size: 9px; line-height: 1.1; white-space: pre; }
+
+        /* Base styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Arabic font styles */
+        :lang(ar) {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands {
+            font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+        }
+        
+        /* Custom brand colors & gradients */
+        .bg-royal-blue { background-color: #0055A4; }
+        .text-royal-blue { color: #0055A4; }
+        .border-royal-blue { border-color: #0055A4; }
+        .bg-golden-yellow { background-color: #E7C717; }
+        .text-golden-yellow { color: #E7C717; }
+        .bg-midnight-navy { background-color: #003A6F; }
+        .text-midnight-navy { color: #003A6F; }
+        .bg-light-sky { background-color: #6EB6FF; }
+        .text-charcoal { color: #222222; }
+        .bg-hero-gradient { background-image: linear-gradient(120deg, #003A6F 0%, #0055A4 100%); }
+        
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 70%);
+            transform: rotate(20deg);
+            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .btn-shine:hover::after {
+            left: 50%;
+        }
+
+        /* Wave SVG divider */
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+        .wave-divider .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        [dir="rtl"] .wave-divider {
+            transform: rotate(180deg) scaleX(-1);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+
+        .feature-card {
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .clock-hand, .magnifying-glass, .water-drop, .checkmark, .hero-title-animation, .hero-subtitle-animation {
+                animation: none;
+            }
+        }
+        #how-it-works .grid > div {
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            opacity: 0.5;
+        }
+
+        #how-it-works .grid > div.active {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #how-it-works .grid > div.active {
+                transform: none;
+            }
+        }
+    </style>
 </head>
-<body>
-    <p>Redirecting to the Arabic site. If you are not redirected, <a href="/ar/">click here</a>.</p>
+<body class="bg-white text-charcoal antialiased">
+
+    <!-- Language and Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0 flex items-center">
+                    <img src="../src/images/mQsala-images/images/mqsala-horizontal.svg" alt="mQsala Logo" class="h-10 w-auto">
+                </a>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-reverse space-x-6">
+                    <a href="#features" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">المميزات</a>
+                    <a href="#how-it-works" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">كيف نعمل</a>
+                    <a href="#about" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">من نحن</a>
+                    <a href="#technology" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">التقنية</a>
+                    <a href="#roadmap" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">خارطة الطريق</a>
+                    <a href="#partners" class="text-charcoal hover:text-royal-blue transition-colors duration-300 font-semibold">الشركاء</a>
+                </div>
+                <!-- Right side items: Language Switcher and Mobile Menu Button -->
+                <div class="flex items-center">
+                    <a href="../en/index.html" class="text-charcoal font-semibold py-2 px-4 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors duration-300">English</a>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center mr-4">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-charcoal hover:text-royal-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue">
+                            <span class="sr-only">افتح القائمة الرئيسية</span>
+                            <svg id="hamburger-icon" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="#features" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">المميزات</a>
+                <a href="#how-it-works" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">كيف نعمل</a>
+                <a href="#about" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">من نحن</a>
+                <a href="#technology" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">التقنية</a>
+                <a href="#roadmap" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">خارطة الطريق</a>
+                <a href="#partners" class="text-charcoal hover:bg-gray-50 hover:text-royal-blue block px-3 py-2 rounded-md text-base font-medium">الشركاء</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-hero-gradient pt-32 pb-40 relative text-white">
+        <img src="../assets/media/svg/hero-background.svg" alt="Abstract background" class="absolute inset-0 w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight hero-title-animation">مستقبل الغسيل بين يديك.</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-sky hero-subtitle-animation">تجربة غسيل مبتكرة. جدولة فورية، تتبع شفاف، وعناية فائقة، كل ذلك بلمسة زر.</p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 fade-in-up delay-2">
+                <a href="#" class="w-full sm:w-auto bg-golden-yellow text-charcoal font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105 btn-shine">
+                    <img src="https://www.svgrepo.com/show/452159/app-store.svg"
+                        alt="App Store" class="w-6 h-6 ml-2" />
+                    <span>قريباً على App Store</span>
+                </a>
+                <a href="#" class="w-full sm:w-auto bg-white text-charcoal font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105 btn-shine">
+                    <img src="https://www.svgrepo.com/show/131985/google-play.svg" alt="Google Play" class="w-6 h-6 ml-2">
+                    <span>قريباً على Google Play</span>
+                </a>
+            </div>
+        </div>
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy">ما يميز مغسلة</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">اكتشف المزايا الذكية التي تجعلنا الخيار الأول، والمصممة خصيصاً لأسلوب حياتك العصري.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up">
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="../assets/media/svg/smart-scheduling.svg" alt="Smart Scheduling" class="w-12 h-12"/>
+                        </div>
+                        <h3 class="text-xl font-bold my-4 text-charcoal">جدولة ذكية</h3>
+                        <p class="text-gray-600">اختر وقتاً ومكاناً للاستلام والتوصيل يناسب حياتك المزدحمة.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-1">
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="../assets/media/svg/secure-transparent.svg" alt="Secure & Transparent" class="w-12 h-12"/>
+                        </div>
+                        <h3 class="text-xl font-bold my-4 text-charcoal">آمن وشفاف</h3>
+                        <p class="text-gray-600">مدعوم بتقنية البلوك تشين لمدفوعات آمنة وتتبع شفاف للطلبات.</p>
+                    </div>
+                    <!-- Feature 3 – Eco-Friendly -->
+                    <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-2">
+                        <div class="flex-shrink-0 bg-green-600 text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="../assets/media/svg/eco-friendly.svg" alt="Eco-Friendly" class="w-12 h-12"/>
+                        </div>  
+                        <h3 class="text-xl font-bold my-4 text-charcoal">صديق للبيئة</h3>
+                        <p class="text-gray-600">نعطي الأولوية للاستدامة من خلال الشراكة مع مغاسل تستخدم أساليب خضراء.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="text-center feature-card bg-white p-6 rounded-lg shadow-sm fade-in-up delay-3">
+                        <div class="flex-shrink-0 bg-royal-blue text-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg mx-auto">
+                            <img src="../assets/media/svg/quality-guaranteed.svg" alt="Quality Guaranteed" class="w-12 h-12"/>
+                        </div>
+                        <h3 class="text-xl font-bold my-4 text-charcoal">جودة مضمونة</h3>
+                        <p class="text-gray-600">تنظيف عالي الجودة مع خدمة موثوقة، في كل مرة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto py-12 bg-gradient-to-br from-midnight-navy to-royal-blue rounded-3xl overflow-hidden shadow-2xl relative">
+            <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#fbbf24 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="text-center mb-10 relative z-10">
+                <h2 class="text-3xl font-bold text-white">
+                     محاكاة الذكاء الاصطناعي <span class="text-blue-200 text-sm block mt-2 font-normal">شاهد كيف يحلل AI ملابسك</span>
+                </h2>
+                <button onclick="runAISimulation()" id="startAIBtn" class="mt-6 bg-golden-yellow hover:bg-yellow-500 text-midnight-navy px-8 py-2 rounded-full font-bold shadow-lg shadow-yellow-500/30 transition-all flex items-center mx-auto gap-2">
+                    <i class="fas fa-brain"></i> ابدأ التحليل
+                </button>
+            </div>
+
+            <div class="relative h-[350px] flex items-center justify-center p-4" id="ai-stage">
+                <div id="ai-placeholder" class="text-blue-100 text-center opacity-70">
+                    <i class="fas fa-camera text-5xl mb-4"></i>
+                    <p>اضغط الزر لبدء محاكاة التعرف على الملابس</p>
+                </div>
+                <div id="ai-image-container" class="relative hidden w-64 h-64 bg-white/10 rounded-xl overflow-hidden border-2 border-golden-yellow shadow-2xl backdrop-blur-sm">
+                    <div class="w-full h-full flex items-center justify-center">
+                        <i class="fas fa-shirt text-9xl text-white opacity-20"></i>
+                        <div id="ai-stain" class="absolute top-1/3 left-1/3 w-8 h-8 bg-amber-700/80 rounded-full blur-sm opacity-0 transition-opacity duration-500"></div>
+                    </div>
+                    <div id="scan-line" class="hidden h-1 w-full bg-golden-yellow absolute top-0 shadow-[0_0_15px_rgba(251,191,36,1)] z-20"></div>
+                    <div id="bounding-box" class="absolute top-1/4 left-1/4 w-1/2 h-1/2 border-2 border-green-400 rounded hidden animate-pulse">
+                        <span class="absolute -top-6 right-0 bg-green-500 text-white text-[10px] px-2 py-0.5 rounded">Cotton Shirt</span>
+                    </div>
+                    <div id="stain-box" class="absolute top-[30%] left-[30%] w-10 h-10 border-2 border-red-500 rounded-full hidden animate-pulse">
+                         <span class="absolute -bottom-6 right-0 bg-red-500 text-white text-[10px] px-2 py-0.5 rounded">Stain Detected</span>
+                    </div>
+                </div>
+                <div id="ai-results" class="absolute right-4 md:right-10 top-1/4 flex flex-col gap-3"></div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy">غسيل نظيف في 3 خطوات بسيطة</h2>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-300" style="z-index: 0;"></div>
+                    <div class="grid md:grid-cols-3 gap-12 relative z-10">
+                        <div class="text-center fade-in-up"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">١</div></div><h3 class="text-xl font-bold mb-2">حدد موعد الاستلام</h3><p class="text-gray-600">افتح التطبيق واحجز وقتاً مناسباً لنا لاستلام ملابسك.</p></div>
+                        <div class="text-center fade-in-up delay-1"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">٢</div></div><h3 class="text-xl font-bold mb-2">عناية احترافية ولمسة نهائية متقنة</h3><p class="text-gray-600">يعتني شركاؤنا المعتمدون بملابسك بعناية فائقة، باستخدام منتجات صديقة للبيئة لغسيل وكيّ مثالي.</p></div>
+                        <div class="text-center fade-in-up delay-2"><div class="relative mb-4 inline-block"><div class="bg-golden-yellow text-charcoal rounded-full w-24 h-24 mx-auto flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-gray-50">٣</div></div><h3 class="text-xl font-bold mb-2">استلم ملابسك نظيفة</h3><p class="text-gray-600">نعيد إليك ملابسك نظيفة ومنعشة إلى عتبة دارك في الوقت المحدد.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto py-16">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl font-bold text-midnight-navy">
+                     التكامل الذكي: <span class="text-royal-blue">الفرق الذي نصنعه</span>
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    شاهد كيف يتحول تشخيص الذكاء الاصطناعي فوراً إلى عقد ذكي غير قابل للتعديل، مما يضمن حقك وحق المغسلة.
+                </p>
+                <button onclick="runFullCycle()" id="startFullBtn" class="mt-8 bg-gradient-to-r from-royal-blue to-midnight-navy hover:from-blue-700 hover:to-blue-900 text-white px-10 py-3 rounded-full font-bold shadow-xl transition-all transform hover:scale-105">
+                    <i class="fas fa-rocket"></i> بدء الدورة الكاملة
+                </button>
+            </div>
+
+            <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 min-h-[500px] flex flex-col md:flex-row">
+                <div class="w-full md:w-1/3 p-8 border-b md:border-b-0 md:border-l border-gray-100 bg-gray-50 flex flex-col items-center justify-center relative transition-colors duration-500" id="stage-ai">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-gray-400">01. AI DIAGNOSIS</div>
+                    <div class="w-32 h-32 bg-white rounded-2xl shadow-inner flex items-center justify-center relative mb-6 overflow-hidden">
+                        <i class="fas fa-tshirt text-6xl text-gray-300" id="garment-icon"></i>
+                        <div id="full-scan-line" class="absolute top-0 left-0 w-full h-1 bg-golden-yellow shadow-[0_0_10px_rgba(251,191,36,0.8)] hidden"></div>
+                    </div>
+                    <div id="ai-status" class="text-center">
+                        <h4 class="font-bold text-gray-700">بانتظار الملابس...</h4>
+                    </div>
+                    <div id="data-packet" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-royal-blue rounded-full shadow-lg z-20 opacity-0"></div>
+                </div>
+
+                <div class="w-full md:w-1/3 p-8 border-b md:border-b-0 md:border-l border-gray-100 flex flex-col items-center justify-center relative" id="stage-bridge">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-gray-400">02. SMART CONTRACT</div>
+                    <div class="h-1 w-full bg-gray-200 absolute top-1/2 left-0 -z-10 hidden md:block"></div>
+                    <div class="w-24 h-24 rounded-full bg-white border-4 border-gray-200 flex items-center justify-center z-10 transition-all duration-300" id="contract-node">
+                        <i class="fas fa-file-contract text-3xl text-gray-300"></i>
+                    </div>
+                    <div class="mt-6 text-center opacity-0 transition-opacity duration-300" id="contract-details">
+                        <div class="text-xs font-mono bg-black text-green-400 p-2 rounded mb-2">Hashing...</div>
+                        <p class="text-xs text-gray-500">تحويل التشخيص إلى عقد رقمي</p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 p-8 bg-gray-50 flex flex-col items-center justify-center relative transition-colors duration-500" id="stage-chain">
+                    <div class="absolute top-4 right-4 text-xs font-bold text-gray-400">03. IMMUTABLE LEDGER</div>
+                    <div id="final-block" class="w-40 h-40 bg-white border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center opacity-50 transform scale-90 transition-all duration-500">
+                        <i class="fas fa-cubes text-4xl text-gray-300 mb-2"></i>
+                        <span class="text-xs text-gray-400">Block Pending</span>
+                    </div>
+                    <div id="success-badge" class="absolute inset-0 bg-white/90 backdrop-blur-sm z-20 flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 animate-bounce-slight">
+                            <i class="fas fa-check text-4xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-midnight-navy">موثق ومضمون</h3>
+                        <p class="text-gray-600 text-sm mt-2">لا يمكن تعديل البيانات بعد الآن</p>
+                        <div class="mt-4 text-xs text-red-400 line-through">تعديل التشخيص؟</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto py-16 bg-white border border-gray-200 rounded-3xl shadow-xl overflow-hidden relative">
+            <div class="text-center mb-8 px-4 relative z-10">
+                <h2 class="text-3xl font-bold text-midnight-navy">مركز العمليات اللوجستية الذكي <span class="text-tech-cyan text-sm block mt-2 font-normal font-mono dir-ltr">&lt;DIGITAL COMMAND CENTER&gt;</span></h2>
+                <p class="text-gray-500 mt-2">نظام إدارة ذكي يربط أسطولنا، المعامل، والعملاء في شبكة واحدة متزامنة.</p>
+                <button onclick="runSmartLogistics()" id="startLogisticsBtn" class="mt-6 bg-gradient-to-r from-tech-dark to-midnight-navy hover:from-slate-800 hover:to-blue-900 text-tech-cyan border border-tech-cyan/50 px-8 py-3 rounded-full font-bold shadow-lg transition-all flex items-center mx-auto gap-3 group">
+                    <i class="fas fa-satellite-dish group-hover:animate-pulse"></i> تفعيل النظام
+                </button>
+            </div>
+            <div class="relative h-[600px] w-full bg-slate-900 overflow-hidden flex flex-col items-center justify-center tech-bg shadow-inner">
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+                    <div class="w-[800px] h-[800px] border border-tech-cyan/20 rounded-full flex items-center justify-center">
+                        <div class="w-[600px] h-[600px] border border-tech-cyan/20 rounded-full flex items-center justify-center">
+                            <div class="w-[400px] h-[400px] border border-tech-cyan/20 rounded-full relative">
+                                <div class="absolute inset-0 radar-sweep opacity-30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-8 left-8 w-64 hud-border bg-slate-800/80 backdrop-blur p-4 rounded-lg hidden md:block">
+                    <div class="text-xs text-tech-cyan font-mono border-b border-tech-cyan/30 pb-2 mb-3">LIVE METRICS</div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs text-gray-400 mb-1"><span>كفاءة الأسطول</span> <span id="metric-eff">94%</span></div>
+                            <div class="w-full bg-slate-700 h-1.5 rounded-full overflow-hidden"><div class="bg-green-500 h-full w-[94%] animate-pulse"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-gray-400 mb-1"><span>الانبعاثات (CO2)</span> <span id="metric-co2">-12%</span></div>
+                            <div class="w-full bg-slate-700 h-1.5 rounded-full overflow-hidden"><div class="bg-tech-cyan h-full w-[88%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-gray-400 mb-1"><span>الدقة الزمنية</span> <span id="metric-time">99.9%</span></div>
+                            <div class="w-full bg-slate-700 h-1.5 rounded-full overflow-hidden"><div class="bg-purple-500 h-full w-[99%]"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative w-[85%] h-2 bg-slate-700/50 rounded-full flex items-center justify-between px-4 md:px-16 z-10 mt-10 border border-slate-600">
+                    <div id="pipeline-glow" class="absolute top-0 right-0 h-full bg-gradient-to-l from-tech-cyan to-blue-500 shadow-[0_0_20px_#06b6d4] rounded-full transition-all duration-1000 w-0 z-0"></div>
+                    <div class="relative z-10 flex flex-col items-center group">
+                        <div id="node-home" class="w-14 h-14 bg-slate-800 border-2 border-slate-500 rounded-full flex items-center justify-center text-slate-400 transition-all duration-500 shadow-lg"><i class="fas fa-house text-xl"></i></div>
+                        <div class="mt-4 text-[10px] font-mono text-tech-cyan opacity-70 text-center tracking-wider">العميل</div>
+                        <div id="popup-home" class="absolute -top-40 w-56 hud-border bg-slate-900/90 p-4 rounded text-xs opacity-0 transition-all duration-500 transform scale-90 pointer-events-none text-right">
+                            <div class="text-golden-yellow font-bold mb-2 border-b border-gray-700 pb-1">الجدولة الذكية (AI)</div>
+                            <div class="space-y-2 text-gray-300 hud-text">
+                                <div class="flex items-center gap-2"><i class="fas fa-clock text-green-400"></i> <span>تم الحجز: 10:00 ص</span></div>
+                                <div class="flex items-center gap-2"><i class="fas fa-map-pin text-green-400"></i> <span>الموقع: دقيق (GPS)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center group">
+                        <div id="node-pickup" class="w-10 h-10 bg-slate-800 border-2 border-slate-500 rounded-full flex items-center justify-center text-slate-400 transition-all duration-500 shadow-lg"><i class="fas fa-route text-sm"></i></div>
+                        <div id="popup-pickup" class="absolute -bottom-40 w-56 hud-border bg-slate-900/90 p-4 rounded text-xs opacity-0 transition-all duration-500 transform scale-90 pointer-events-none text-right">
+                            <div class="text-tech-cyan font-bold mb-2 border-b border-gray-700 pb-1">تحسين المسار الديناميكي</div>
+                            <div class="space-y-2 text-gray-300 hud-text">
+                                <div class="flex items-center gap-2"><i class="fas fa-traffic-light text-red-400"></i> <span>تفادي ازدحام: نشط</span></div>
+                                <div class="flex items-center gap-2"><i class="fas fa-leaf text-green-400"></i> <span>توفير الوقود: 15%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center group">
+                        <div id="node-facility" class="w-16 h-16 bg-slate-800 border-2 border-slate-500 rounded-full flex items-center justify-center text-slate-400 transition-all duration-500 shadow-lg"><i class="fas fa-microchip text-2xl"></i></div>
+                        <div class="mt-4 text-[10px] font-mono text-tech-cyan opacity-70 text-center tracking-wider">المعمل الذكي</div>
+                        <div id="popup-facility" class="absolute -top-40 w-64 hud-border bg-slate-900/90 p-4 rounded text-xs opacity-0 transition-all duration-500 transform scale-90 pointer-events-none text-right">
+                            <div class="text-purple-400 font-bold mb-2 border-b border-gray-700 pb-1">وحدة المعالجة المركزية</div>
+                            <div class="space-y-2 text-gray-300 hud-text">
+                                <div class="flex justify-between"><span>الفرز:</span> <span class="text-green-400">آلي (RFID)</span></div>
+                                <div class="flex justify-between"><span>مواد التنظيف:</span> <span class="text-green-400">معايرة دقيقة</span></div>
+                                <div class="text-xs text-gray-500 mt-1">جاري تحليل النسيج...</div>
+                                <div class="w-full bg-slate-700 h-1 mt-1 rounded-full overflow-hidden"><div class="bg-purple-500 h-full w-0 animate-[growLine_2s_ease-out_forwards]"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center group">
+                        <div id="node-end" class="w-14 h-14 bg-slate-800 border-2 border-slate-500 rounded-full flex items-center justify-center text-slate-400 transition-all duration-500 shadow-lg"><i class="fas fa-box text-xl"></i></div>
+                        <div class="mt-4 text-[10px] font-mono text-tech-cyan opacity-70 text-center tracking-wider">التسليم</div>
+                        <div id="popup-end" class="absolute -bottom-40 w-56 hud-border bg-slate-900/90 p-4 rounded text-xs opacity-0 transition-all duration-500 transform scale-90 pointer-events-none text-right">
+                            <div class="text-green-400 font-bold mb-2 border-b border-gray-700 pb-1">الميل الأخير (Last Mile)</div>
+                            <div class="flex flex-col items-center py-2"><i class="fas fa-qrcode text-4xl bg-white p-1 rounded mb-2"></i><span class="text-gray-300">مسح للتوثيق النهائي</span></div>
+                        </div>
+                    </div>
+                    <div id="logistics-unit" class="absolute top-[calc(50%-24px)] right-[7%] z-20 transition-all duration-700 ease-linear opacity-0">
+                        <div class="relative">
+                            <div class="w-12 h-12 bg-white rounded-xl shadow-[0_0_25px_rgba(6,182,212,0.6)] flex items-center justify-center text-midnight-navy z-20 border-2 border-tech-cyan transform rotate-45"><i class="fas fa-truck transform -rotate-45"></i></div>
+                            <div class="absolute inset-0 border border-tech-cyan rounded-xl animate-ping-slow opacity-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-[90%] max-w-xl">
+                    <div class="hud-border bg-slate-800/95 p-4 rounded-lg flex items-center gap-4 shadow-2xl">
+                        <div class="w-10 h-10 bg-slate-900 rounded flex items-center justify-center border border-slate-700 text-tech-cyan"><i id="hud-icon" class="fas fa-power-off"></i></div>
+                        <div class="flex-1">
+                            <div class="text-[9px] text-tech-cyan font-mono tracking-widest uppercase mb-1">LOG_STREAM</div>
+                            <div id="hud-text" class="text-sm font-bold text-white hud-text typing-effect">النظام في وضع الاستعداد - بانتظار الأوامر</div>
+                        </div>
+                        <div class="text-left hidden sm:block">
+                            <div class="text-[9px] text-gray-500 font-mono">STATUS</div>
+                            <div class="text-green-400 font-bold font-mono text-xs">ONLINE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in-up"><span class="text-royal-blue font-semibold">مهمتنا</span><h2 class="text-3xl md:text-4xl font-bold text-midnight-navy mt-2">نبتكر مستقبل النظافة</h2><p class="mt-4 text-gray-600 text-lg">تُحدث مغسلة ثورة في عالم الغسيل. عبر دمج أحدث التقنيات مع الالتزام بالاستدامة ورضا العملاء، نقدم خدمة لا مثيل لها تمكّن المستخدمين وشركاءنا من المغاسل المحلية على حد سواء.</p>
+                        <div class="mt-8 grid grid-cols-2 gap-6">
+                            <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold">الثقة والشفافية</h4><p class="text-sm text-gray-600">مبنية على تقنية آمنة.</p></div></div>
+                            <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold">الابتكار</h4><p class="text-sm text-gray-600">تحسين تجربتك باستمرار.</p></div></div>
+                            <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold">الاستدامة</h4><p class="text-sm text-gray-600">نهتم بملابسك وكوكبنا.</p></div></div>
+                            <div class="flex items-start"><svg class="w-6 h-6 text-golden-yellow flex-shrink-0 ml-3 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><div><h4 class="font-bold">التركيز على العميل</h4><p class="text-sm text-gray-600">أنت في قلب خدمتنا.</p></div></div>
+                        </div>
+                    </div>
+                    <!-- IMPROVED: Changed alt text to accurately describe the image content. -->
+                    <div class="fade-in-up delay-1"><img src="../src/images/mQsala-images/images/mqsalaMobile.png" onerror="this.onerror=null;this.src='https://placehold.co/600x800/0055A4/FFFFFF?text=mQsala+App';" alt="Mockup of the mQsala application on a smartphone." class="rounded-xl shadow-2xl w-full h-auto object-cover" style="max-height: 500px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-midnight-navy text-center mb-16 relative">لماذا يختار الجميع <span class="text-royal-blue">مغسلة</span>؟<span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-golden-yellow rounded-full"></span></h2>
+            <div class="relative grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full vs-badge items-center justify-center text-white font-black text-xl z-20 border-4 border-gray-100 animate-bounce-slight">VS</div>
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200 relative overflow-hidden group hover:bg-gray-100 transition duration-300">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gray-200 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-xl font-bold text-gray-500 mb-2">البرامج التقليدية</h3>
+                        <p class="text-sm text-gray-400">أنظمة قديمة ومحدودة</p>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-600"><div class="w-8 h-8 rounded-full bg-red-100 text-red-500 flex items-center justify-center ml-4 shrink-0"><i class="fas fa-times"></i></div><span>مربوط بجهاز واحد فقط (غير سحابي)</span></li>
+                        <li class="flex items-center text-gray-600"><div class="w-8 h-8 rounded-full bg-red-100 text-red-500 flex items-center justify-center ml-4 shrink-0"><i class="fas fa-times"></i></div><span>فواتير ورقية تضيع بسهولة</span></li>
+                        <li class="flex items-center text-gray-600"><div class="w-8 h-8 rounded-full bg-red-100 text-red-500 flex items-center justify-center ml-4 shrink-0"><i class="fas fa-times"></i></div><span>غياب التحديثات والتطوير المستمر</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-royal-blue shadow-2xl relative overflow-hidden transform md:-translate-y-4 z-10">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-royal-blue/5 rounded-bl-full -mr-4 -mt-4"></div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-royal-blue mb-2">نظام مغسلة الذكي</h3>
+                        <p class="text-sm text-golden-yellow font-bold">الخيار الأمثل للمستقبل</p>
+                    </div>
+                    <ul class="space-y-5">
+                        <li class="flex items-center text-midnight-navy font-semibold"><div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center ml-4 shrink-0 shadow-sm"><i class="fas fa-check"></i></div><span>سحابي بالكامل - أدر عملك من أي مكان</span></li>
+                        <li class="flex items-center text-midnight-navy font-semibold"><div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center ml-4 shrink-0 shadow-sm"><i class="fas fa-check"></i></div><span>فواتير إلكترونية وتتبع عبر QR Code</span></li>
+                        <li class="flex items-center text-midnight-navy font-semibold"><div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center ml-4 shrink-0 shadow-sm"><i class="fas fa-check"></i></div><span>تحديثات مجانية ومستمرة بلا توقف</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <section class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-midnight-navy mb-12">مكدس تقني للمؤسسات</h2>
+                    <div class="relative grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                        <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-royal-blue/20 to-transparent -z-10"></div>
+                        <div class="glass-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group bg-white">
+                            <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i class="fab fa-react text-4xl text-blue-500 animate-spin-slow"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-royal-blue mb-2">React & NestJS</h3>
+                            <p class="text-sm text-gray-600">واجهة حديثة وسريعة الاستجابة</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-2xl shadow-2xl bg-gradient-to-br from-royal-blue to-midnight-navy text-white transform scale-110 z-10">
+                            <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-4 border border-white/20 animate-pulse-slow">
+                                <i class="fab fa-aws text-5xl text-golden-yellow"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">AWS Cloud</h3>
+                            <p class="text-sm text-blue-100">أداء وموثوقية قصوى</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group bg-white">
+                            <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-database text-4xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-royal-blue mb-2">PostgreSQL</h3>
+                            <p class="text-sm text-gray-600">قواعد بيانات آمنة وقابلة للتوسع</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <!-- Roadmap / Next Dev Level Section -->
+        <section id="roadmap" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <section class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold text-midnight-navy text-center mb-12">خارطة الطريق: التطور القادم</h2>
+                    <div class="relative border-r-4 border-royal-blue/20 mr-4 space-y-12">
+                        <div class="relative flex items-center group">
+                            <div class="absolute -right-[1.1rem] w-8 h-8 bg-golden-yellow rounded-full border-4 border-white shadow-md flex items-center justify-center z-10">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div class="mr-12 bg-white p-5 rounded-xl shadow-md border-r-4 border-golden-yellow w-full transform transition hover:scale-[1.02]">
+                                <h4 class="font-bold text-lg text-midnight-navy flex items-center gap-2">
+                                    <i class="fas fa-list-check text-golden-yellow"></i> جدول زمني موثق
+                                </h4>
+                                <p class="text-sm text-gray-600 mt-2">سجل تتبع مقاوم للتلاعب لمراحل الاستلام والتنظيف والتسليم.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center group">
+                            <div class="absolute -right-[1.1rem] w-8 h-8 bg-royal-blue rounded-full border-4 border-white shadow-md flex items-center justify-center z-10 animate-pulse">
+                                <i class="fas fa-clock text-white text-xs"></i>
+                            </div>
+                            <div class="mr-12 bg-white p-5 rounded-xl shadow-md border-r-4 border-royal-blue w-full transform transition hover:scale-[1.02]">
+                                <h4 class="font-bold text-lg text-midnight-navy flex items-center gap-2">
+                                    <i class="fas fa-route text-royal-blue"></i> تقديرات وصول ذكية
+                                </h4>
+                                <p class="text-sm text-gray-600 mt-2">تحديثات استباقية وتقديرات وصول أكثر دقة.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center group">
+                            <div class="absolute -right-[1.1rem] w-8 h-8 bg-gray-300 rounded-full border-4 border-white shadow-md flex items-center justify-center z-10">
+                                <i class="fas fa-brain text-gray-600 text-xs"></i>
+                            </div>
+                            <div class="mr-12 bg-white/60 p-5 rounded-xl border border-gray-200 w-full hover:bg-white transition">
+                                <h4 class="font-bold text-lg text-gray-700 flex items-center gap-2">
+                                    <i class="fas fa-tshirt text-gray-500"></i> مدرب العناية بالملابس
+                                </h4>
+                                <p class="text-sm text-gray-500 mt-2">نصائح مفيدة للعناية بالملابس وإرشادات البقع.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <section class="max-w-4xl mx-auto py-12">
+                    <div class="bg-gradient-to-l from-midnight-navy to-royal-blue rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center gap-12 overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                        <div class="flex-1 z-10">
+                            <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                                <i class="fas fa-shield-halved text-golden-yellow"></i>
+                                الخصوصية والثقة
+                            </h2>
+                            <p class="text-blue-100 mb-6 leading-relaxed">
+                                تصميم يضع الخصوصية أولاً. تبقى التفاصيل الحساسة خاصة، مع تخزين بيانات التحقق الضرورية فقط.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                                        <i class="fas fa-lock text-sm text-golden-yellow"></i>
+                                    </div>
+                                    <span class="text-sm">آمن بالتصميم وضوابط مؤسسية</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                                        <i class="fas fa-robot text-sm text-golden-yellow"></i>
+                                    </div>
+                                    <span class="text-sm">الذكاء الاصطناعي استشاري، وأنت صاحب القرار</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-48 h-48 relative flex-shrink-0 animate-float">
+                            <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-2xl">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M50 5 L90 20 V50 C90 75 50 95 50 95 C50 95 10 75 10 50 V20 Z" fill="url(#grad1)" />
+                                <path d="M50 35 A10 10 0 0 0 40 45 V50 H60 V45 A10 10 0 0 0 50 35 M40 50 V65 H60 V50" fill="white" opacity="0.9" />
+                                <circle cx="50" cy="50" r="42" fill="none" stroke="white" stroke-width="2" stroke-dasharray="10 5" opacity="0.5">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="10s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Why mQsala Section -->
+        <section id="why-mqsala" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-midnight-navy">لماذا mQsala</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">لأن الراحة وحدها لا تكفي — ثقتك هي الأهم.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-eye"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal">شفافية تطمئنك</h3>
+                        <p class="text-gray-600">تابع طلبك عبر مراحل واضحة — الاستلام، العناية، التسليم — لتعرف دائمًا ما يحدث.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-1">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal">أمان وخصوصية أولاً</h3>
+                        <p class="text-gray-600">نحمي معلوماتك. التقنية تعمل في الخلفية بينما تبقى بياناتك محفوظة.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-2">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-handshake"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal">خدمة أكثر سلاسة وموثوقية</h3>
+                        <p class="text-gray-600">التحديثات الموثّقة تعزز المسؤولية وتقلل الالتباس — لنقدّم جودة ثابتة.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card fade-in-up delay-3">
+                        <div class="text-4xl text-royal-blue mb-4"><i class="fas fa-robot"></i></div>
+                        <h3 class="font-bold text-xl mb-2 text-charcoal">مساعدة ذكية تُبقيك المتحكم</h3>
+                        <p class="text-gray-600">الذكاء الاصطناعي يساعدك في الاستفسارات والتحديثات ونصائح العناية — وأنت من يؤكد الخطوات النهائية.</p>
+                    </div>
+                </div>
+                <p class="text-center mt-12 text-gray-500">حتى التقنية المتقدمة لا يجب أن تكون معقدة. نحن نستخدمها لتجعل الغسيل أسهل.</p>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto bg-gray-50 rounded-3xl overflow-hidden border border-gray-200 py-12">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-midnight-navy">محاكاة البلوك تشين <span class="text-royal-blue text-sm block mt-2 font-normal">كيف نضمن النزاهة؟</span></h2>
+                <button onclick="runSimulation()" id="startBtn" class="mt-6 bg-golden-yellow hover:bg-yellow-500 text-midnight-navy px-8 py-2 rounded-full font-bold shadow-lg transition-all flex items-center mx-auto gap-2"><i class="fas fa-play"></i> تشغيل المحاكاة</button>
+            </div>
+            <div class="relative min-h-[300px] flex items-center justify-center overflow-x-auto p-4" id="simulation-stage">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#1e3a8a 1px, transparent 1px); background-size: 20px 20px;"></div>
+                <div id="chain-container" class="flex items-center space-x-4 space-x-reverse relative z-10"><div class="text-gray-400 text-sm italic" id="placeholder-text">اضغط "تشغيل المحاكاة" لترى كيف يتم بناء سجل طلبك...</div></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border-t border-gray-200 text-center text-xs text-gray-500 mt-4">
+                <div class="flex items-center justify-center gap-2"><span class="w-3 h-3 bg-white border-2 border-royal-blue rounded-sm block"></span><span>بلوك جديد (معلومات الطلب)</span></div>
+                <div class="flex items-center justify-center gap-2"><span class="w-8 h-1 bg-gray-300 block"></span><span>الهاش (الرابط المشفر)</span></div>
+                <div class="flex items-center justify-center gap-2"><i class="fas fa-check-circle text-green-500"></i><span>تم التحقق (مقاوم للتلاعب)</span></div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-midnight-navy">شركاؤنا في النجاح</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">مدعومون بفخر من قبل منظمات رائدة تقود الابتكار.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    
+                    <!-- MISA -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up hover:shadow-md transition-shadow">
+                        <img src="../src/images/mQsala-images/images/Saudi_Ministry_of_Investment_Logo.svg" alt="Saudi Ministry of Investment Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4">وزارة الاستثمار السعودية</h3>
+                        <p class="text-sm text-gray-600">حصلنا على ترخيص ريادي من وزارة الاستثمار.</p>
+                    </div>
+
+                    <!-- CODE -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up delay-1 hover:shadow-md transition-shadow">
+                        <img src="../src/images/mQsala-images/images/code-logo.png" alt="CODE Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4">مركز ريادة الأعمال الرقمية</h3>
+                        <p class="text-sm text-gray-600">معمل CODE بجامعة الملك سعود.</p>
+                    </div>
+
+                    <!-- Vision 2030 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm fade-in-up delay-2 hover:shadow-md transition-shadow">
+                        <img src="../src/images/mQsala-images/images/Saudi_Vision_2030_logo.svg" alt="Saudi Vision 2030 Logo" class="h-16 mx-auto">
+                        <h3 class="font-bold text-lg mb-2 mt-4">رؤية السعودية 2030</h3>
+                        <p class="text-sm text-gray-600">متوافقون مع رؤية المملكة للتحول الرقمي.</p>
+                    </div>
+
+                </div>
+                 <!-- Other Partners -->
+                <div class="text-center mb-16">
+            <img src="../assets/media/svg/flow-animation.svg" alt="Order Flow Animation" class="w-full"/>
+        </div>
+        <section class="max-w-6xl mx-auto py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-midnight-navy">
+                    السهولة الظاهرة، <span class="text-royal-blue">والقوة الكامنة</span>
+                </h2>
+                <p class="text-gray-600 mt-2">تطبيق مصمم لراحتك التامة، مدعوم بترسانة تقنية تعمل على مدار الساعة.</p>
+            </div>
+
+            <div class="relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-black group matrix-bg">
+                <div id="backend-layer" class="absolute inset-0 overflow-hidden opacity-30 transition-all duration-1000 bg-black">
+                    <div class="absolute inset-0 flex justify-between opacity-30 pointer-events-none select-none w-[120%] -left-10">
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50">010101010101010101</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.5s">101010101010101010</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 1.5s">001100110011001100</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 3s">AF32B9C1D4E5F6A78B</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2s">010101010101010101</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.2s">101010101010101010</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 1.8s">001100110011001100</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.7s">AF32B9C1D4E5F6A78B</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50">010101010101010101</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.5s">101010101010101010</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 1.5s">001100110011001100</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 3s">AF32B9C1D4E5F6A78B</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2s">010101010101010101</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.2s">101010101010101010</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 1.8s">001100110011001100</div>
+                        <div class="code-rain animate-scroll-up-fast text-[8px] text-green-500/50" style="animation-duration: 2.7s">AF32B9C1D4E5F6A78B</div>
+                    </div>
+
+                    <div class="absolute left-0 top-0 bottom-0 w-1/4 bg-black/40 p-2 font-mono text-[8px] text-green-400 overflow-hidden opacity-50 border-r border-green-900/30">
+                        <div class="animate-scroll-up-fast space-y-1">
+                            <div class="log-text">SYS_INIT_SEQ_START... OK</div>
+                            <div class="log-text">LOAD_BALANCER_ACTIVE: TRUE</div>
+                            <div class="log-text">PING: 12ms | PACKET_LOSS: 0%</div>
+                            <div class="log-text">DB_SHARD_01: SYNCING...</div>
+                            <div class="log-text">DB_SHARD_02: SYNCING...</div>
+                            <div class="log-text">ENCRYPTION: AES-256-GCM</div>
+                            <div class="log-text">FIREWALL: BLOCKING IP 192.168.X.X</div>
+                            <div class="log-text">KERNEL_UPDATE: PENDING</div>
+                            <div class="log-text">MEM_USAGE: 45% | CPU: 12%</div>
+                            <div class="log-text">WORKER_NODE_88: ONLINE</div>
+                            <div class="log-text">CACHE_HIT_RATE: 98.5%</div>
+                            <div class="log-text text-yellow-400">WARN: HIGH_TRAFFIC_DETECTED</div>
+                            <div class="log-text">AUTOSCALING: TRIGGERED +2 NODES</div>
+                            <div class="log-text">SSL_HANDSHAKE: SUCCESS</div>
+                            <div class="log-text">API_GATEWAY: 200 OK</div>
+                            <div class="log-text">SYS_INIT_SEQ_START... OK</div>
+                            <div class="log-text">LOAD_BALANCER_ACTIVE: TRUE</div>
+                            <div class="log-text">PING: 12ms | PACKET_LOSS: 0%</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute right-0 top-0 bottom-0 w-1/4 bg-black/40 p-2 font-mono text-[8px] text-blue-400 overflow-hidden opacity-50 border-l border-blue-900/30 dir-ltr text-left">
+                        <div class="animate-scroll-down-fast space-y-1">
+                            <div class="log-text">SELECT * FROM orders WHERE id=991;</div>
+                            <div class="log-text">UPDATE logistics SET loc='24.7,46.6';</div>
+                            <div class="log-text">INSERT INTO logs (type, msg) VALUES...</div>
+                            <div class="log-text">COMMIT TRANSACTION 0x8F9A...</div>
+                            <div class="log-text">FETCH /api/v1/users/profile</div>
+                            <div class="log-text">POST /api/v1/auth/login 200 OK</div>
+                            <div class="log-text text-red-400">ERROR: TIMEOUT (RETRYING...)</div>
+                            <div class="log-text">ROLLBACK SEGMENT CREATED</div>
+                            <div class="log-text">INDEX SCAN ON users_pkey</div>
+                            <div class="log-text">VACUUM ANALYZE verbose</div>
+                            <div class="log-text">WS_CONNECT: CLIENT_ID_4421</div>
+                            <div class="log-text">PUSH_NOTIF: SENT</div>
+                            <div class="log-text">SELECT * FROM orders WHERE id=991;</div>
+                            <div class="log-text">UPDATE logistics SET loc='24.7,46.6';</div>
+                            <div class="log-text">INSERT INTO logs (type, msg) VALUES...</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute inset-0 grid grid-cols-12 grid-rows-12 gap-1 p-10 opacity-30">
+                        <div class="bg-red-500 animate-flash-random" style="animation-delay: 0.1s"></div>
+                        <div class="col-start-3 row-start-5 bg-yellow-500 animate-flash-random" style="animation-delay: 0.5s"></div>
+                        <div class="col-start-8 row-start-2 bg-green-500 animate-flash-random" style="animation-delay: 0.2s"></div>
+                        <div class="col-start-6 row-start-8 bg-blue-500 animate-flash-random" style="animation-delay: 0.7s"></div>
+                        <div class="col-start-10 row-start-4 bg-purple-500 animate-flash-random" style="animation-delay: 0.3s"></div>
+                        <div class="col-start-2 row-start-10 bg-red-500 animate-flash-random" style="animation-delay: 0.9s"></div>
+                        <div class="col-start-11 row-start-11 bg-teal-500 animate-flash-random" style="animation-delay: 0.4s"></div>
+                    </div>
+
+                    <div class="perspective-grid opacity-60"></div>
+
+                    <div class="absolute top-1/2 left-0 w-full h-px bg-white/10">
+                        <div class="absolute top-0 left-0 w-20 h-1 bg-white blur-sm animate-[flyRight_0.5s_linear_infinite]"></div>
+                        <div class="absolute top-0 right-0 w-20 h-1 bg-red-500 blur-sm animate-[flyRight_0.8s_linear_infinite_reverse]"></div>
+                    </div>
+                    <div class="absolute top-1/4 left-0 w-full h-px bg-white/10">
+                         <div class="absolute top-0 left-10 w-10 h-1 bg-yellow-400 blur-sm animate-[flyRight_1.2s_linear_infinite]"></div>
+                    </div>
+                    <div class="absolute bottom-1/4 left-0 w-full h-px bg-white/10">
+                         <div class="absolute top-0 right-20 w-30 h-1 bg-cyan-400 blur-sm animate-[flyRight_0.6s_linear_infinite_reverse]"></div>
+                    </div>
+
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-dashed border-red-500/30 rounded-full animate-spin-slow"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-dashed border-yellow-500/30 rounded-full animate-spin-slow" style="animation-direction: reverse; animation-duration: 5s"></div>
+                </div>
+
+                <div class="absolute inset-0 z-20 flex items-center justify-center">
+                    <div class="relative w-72 h-[500px] bg-white rounded-[3rem] border-8 border-slate-800 shadow-[0_0_60px_rgba(255,255,255,0.9)] z-30 overflow-hidden flex flex-col transform transition-transform duration-500 hover:scale-105">
+                        <div class="absolute -inset-4 rounded-[3.5rem] border-2 border-white/50 animate-pulse-slow pointer-events-none"></div>
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-slate-800 rounded-b-xl z-20"></div>
+                        <div class="flex-1 bg-gray-50 flex flex-col relative">
+                            <div class="h-20 bg-royal-blue rounded-b-3xl shadow-md z-10 flex items-end justify-center pb-4">
+                                <span class="text-white font-bold text-lg">mQsala</span>
+                            </div>
+                            <div class="flex-1 flex flex-col items-center justify-center p-6 text-center transition-all duration-300" id="phone-screen">
+                                <div id="screen-idle" class="flex flex-col items-center w-full">
+                                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mb-6 animate-float">
+                                        <i class="fas fa-tshirt text-4xl text-royal-blue"></i>
+                                    </div>
+                                    <h3 class="text-midnight-navy font-bold text-xl mb-1">غسيل مستعجل؟</h3>
+                                    <p class="text-gray-400 text-sm mb-8">ضغطة واحدة، ونحن نتكفل بالباقي.</p>
+                                    <button onclick="runSimplicitySim()" class="w-full bg-golden-yellow hover:bg-yellow-500 text-midnight-navy font-bold py-4 rounded-xl shadow-lg transition-transform transform active:scale-95 flex items-center justify-center gap-2">
+                                        <span>اطلب الآن</span> <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div id="screen-loading" class="hidden flex-col items-center">
+                                    <div class="w-16 h-16 border-4 border-gray-200 border-t-royal-blue rounded-full animate-spin mb-4"></div>
+                                    <p class="text-gray-500 font-bold">جاري التأكيد...</p>
+                                </div>
+                                <div id="screen-success" class="hidden flex-col items-center">
+                                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 animate-pop-in">
+                                        <i class="fas fa-check text-4xl text-green-500"></i>
+                                    </div>
+                                    <h3 class="text-midnight-navy font-bold text-lg">تم الطلب بنجاح!</h3>
+                                    <p class="text-gray-400 text-xs mt-2">المندوب في الطريق إليك.</p>
+                                    <button onclick="resetSimplicitySim()" class="mt-6 text-royal-blue text-sm underline">عودة</button>
+                                </div>
+                            </div>
+                            <div class="h-16 bg-white border-t border-gray-100 flex items-center justify-around text-gray-300">
+                                <i class="fas fa-home text-royal-blue"></i>
+                                <i class="fas fa-list"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="bg-light-sky/30 py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-midnight-navy">ابقَ على اطلاع دائم</h2>
+                <p class="mt-3 text-lg text-gray-600">انضم إلى قائمتنا البريدية للحصول على التحديثات الحصرية وإعلانات الإطلاق والعروض الخاصة.</p>
+                
+                <form id="mc-embedded-subscribe-form" action="https://mqsala.us9.list-manage.com/subscribe/post?u=8a9f25e1789494a02ed11765e&amp;id=e08e8344c0&amp;f_id=0085c2e1f0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate
+                      class="mt-8 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    
+                    <label for="mce-EMAIL" class="sr-only">البريد الإلكتروني</label>
+                    <input id="mce-EMAIL" name="EMAIL" type="email" required 
+                           class="w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-royal-blue focus:border-royal-blue rounded-full" 
+                           placeholder="أدخل بريدك الإلكتروني">
+                    
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_8a9f25e1789494a02ed11765e_e08e8344c0" tabindex="-1" value="">
+                    </div>
+
+                    <button id="mc-embedded-subscribe" type="submit" name="subscribe"
+                            class="w-full sm:w-auto flex-shrink-0 bg-royal-blue text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 btn-shine disabled:opacity-50 disabled:cursor-not-allowed" 
+                            disabled>اشترك</button>
+                </form>
+
+                <div class="mt-4 text-xs text-gray-500 max-w-lg mx-auto">
+                     <p>ستخدم مغسلة المعلومات التي تقدمها هنا للبقاء على اتصال معك وإرسال تحديثات حول خدماتنا والإطلاق والعروض ورموز الحوكمة.</p>
+                     <div class="mt-2">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="gdpr_consent" name="gdpr_consent" value="Y" class="rounded border-gray-300 text-royal-blue shadow-sm focus:border-royal-blue focus:ring focus:ring-offset-0 focus:ring-royal-blue focus:ring-opacity-50">
+                            <span class="mr-2">أوافق على تلقي تحديثات البريد الإلكتروني والنشرات الإخبارية</span>
+                        </label>
+                    </div>
+                     <p>يمكنك إلغاء الاشتراك في أي وقت بالنقر فوق الرابط الموجود في تذييل رسائل البريد الإلكتروني الخاصة بنا. للحصول على معلومات حول ممارسات الخصوصية لدينا ، يرجى زيارة موقعنا على شبكة الإنترنت.</p>
+                     <p>نحن نستخدم Mailchimp كمنصة تسويق لدينا. بالنقر أدناه للاشتراك ، فإنك تقر بأن معلوماتك سيتم نقلها إلى Mailchimp للمعالجة. <a href="https://mailchimp.com/legal/terms" target="_blank" class="underline">اعرف المزيد</a> عن ممارسات الخصوصية في Mailchimp.</p>
+                </div>
+                <div id="newsletter-message" class="mt-4 text-lg font-semibold"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-midnight-navy text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand Info -->
+                <div class="md:col-span-1">
+                     <a href="#" class="flex items-center mb-4">
+                        <img src="../src/images/mQsala-images/images/mqsala-horizontal.svg" alt="mQsala Logo" class="h-10 w-auto">
+                    </a>
+                    <p class="text-gray-300">الغسيل، بمفهوم جديد.</p>
+                    <div class="flex mt-6 space-x-reverse space-x-4">
+                         <a href="https://twitter.com/mQsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">تويتر</span><i class="fab fa-twitter text-2xl"></i></a>
+                         <!-- FIXED: Corrected the broken Telegram link -->
+                         <a href="https://t.me/mqsala_official" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">تلجرام</span><i class="fab fa-telegram text-2xl"></i></a>
+                         <a href="https://www.linkedin.com/company/mqsala" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">لينكد إن</span><i class="fab fa-linkedin text-2xl"></i></a>
+                         <a href="https://www.youtube.com/@mqsalaofficial" target="_blank" class="text-gray-300 hover:text-white"><span class="sr-only">يوتيوب</span><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+                <!-- Offices -->
+                <div class="md:col-span-2">
+                    <h3 class="font-bold tracking-wider uppercase">مكاتبنا</h3>
+                    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div>
+                            <p class="font-semibold">مكتب الرياض</p>
+                            <address class="text-gray-300 not-italic text-sm">معمل CODE بجامعة الملك سعود,<br>الرياض, 12372,<br>المملكة العربية السعودية</address>
+                        </div>
+                        <div>
+                            <p class="font-semibold">مكتب دبي</p>
+                            <address class="text-gray-300 not-italic text-sm">18.01-HD-122, الطابق 18,<br>برج الشيخ راشد,<br>مركز دبي التجاري العالمي</address>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-bold tracking-wider uppercase">اتصل بنا</h3>
+                    <div class="mt-4">
+                        <a href="mailto:Info@mqsala.com" class="text-gray-300 hover:text-golden-yellow transition-colors">Info@mqsala.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center">
+                 <p class="text-base text-gray-400">&copy; <span id="current-year">2025</span> مغسلة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mailchimp Connection Script -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8a9f25e1789494a02ed11765e/c4c8f6c2562532802b106db76.js");</script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Set current year in footer ---
+            const yearSpan = document.getElementById('current-year');
+            if(yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            // --- Smooth Scrolling for Anchor Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.length > 1) {
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            e.preventDefault();
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // --- Intersection Observer for Fade-in Animations ---
+            // Animates elements into view as the user scrolls.
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                 el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+
+
+            // --- Mobile Menu Toggle ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+            
+            // --- IMPROVEMENT: GDPR Consent for Newsletter ---
+            // Enables the subscribe button only when the consent checkbox is checked.
+            const gdprCheckbox = document.getElementById('gdpr_consent');
+            const subscribeButton = document.getElementById('mc-embedded-subscribe');
+
+            gdprCheckbox.addEventListener('change', function() {
+                subscribeButton.disabled = !this.checked;
+            });
+
+            // --- "How it Works" Scroll Progression ---
+            const steps = document.querySelectorAll('#how-it-works .grid > div');
+            const stepObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        steps.forEach(step => step.classList.remove('active'));
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            steps.forEach(step => {
+                stepObserver.observe(step);
+            });
+        });
+    </script>
+
+    <script>
+        function wait(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+        const chainContainer = document.getElementById('chain-container');
+        const placeholderText = document.getElementById('placeholder-text');
+        const startBtn = document.getElementById('startBtn');
+        const steps = [
+            { title: "إنشاء الطلب", icon: "fa-file-invoice", color: "border-gray-300", hash: "Genesis" },
+            { title: "قيد الغسيل", icon: "fa-tshirt", color: "border-blue-300", hash: "0x8A...3F" },
+            { title: "تم التوصيل", icon: "fa-truck", color: "border-green-300", hash: "0x1C...9B" }
+        ];
+
+        async function runSimulation() {
+            chainContainer.innerHTML = '';
+            placeholderText.style.display = 'none';
+            startBtn.disabled = true;
+            startBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري المحاكاة...';
+            startBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            for (let i = 0; i < steps.length; i++) {
+                await addBlock(steps[i], i);
+                if (i < steps.length - 1) await addLink();
+            }
+            startBtn.innerHTML = '<i class="fas fa-redo"></i> إعادة التشغيل';
+            startBtn.disabled = false;
+            startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            const successMsg = document.createElement('div');
+            successMsg.className = "absolute -top-12 left-1/2 transform -translate-x-1/2 bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-bold animate-fade-in-up border border-green-200 shadow-sm whitespace-nowrap";
+            successMsg.innerHTML = '<i class="fas fa-check-circle"></i> السجل مكتمل وآمن!';
+            chainContainer.appendChild(successMsg);
+        }
+
+        function addBlock(data, index) {
+            return new Promise(resolve => {
+                const block = document.createElement('div');
+                block.className = `w-48 bg-white p-4 rounded-lg border-2 ${data.color} shadow-lg flex flex-col items-center opacity-0 transform translate-y-4 transition-all duration-500 relative z-10`;
+                const prevHashHTML = index > 0 ? `<div class="w-full text-[10px] text-gray-400 border-b border-gray-100 pb-1 mb-2">Prev: <i class="fas fa-link text-xs"></i></div>` : '';
+                block.innerHTML = `${prevHashHTML}<div class="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center mb-2 text-royal-blue"><i class="fas ${data.icon}"></i></div><h4 class="font-bold text-sm text-midnight-navy">${data.title}</h4><div class="mt-2 bg-gray-100 text-gray-500 text-[10px] px-2 py-1 rounded font-mono w-full text-center">Hash: ${data.hash}</div>`;
+                chainContainer.appendChild(block);
+                setTimeout(() => {
+                    block.classList.remove('opacity-0', 'translate-y-4');
+                    block.classList.add('border-golden-yellow');
+                    setTimeout(() => {
+                        block.classList.remove('border-golden-yellow');
+                        block.classList.add('border-royal-blue');
+                        resolve();
+                    }, 1000);
+                }, 100);
+            });
+        }
+
+        function addLink() {
+            return new Promise(resolve => {
+                const linkContainer = document.createElement('div');
+                linkContainer.className = "flex items-center justify-center w-12 relative";
+                const line = document.createElement('div');
+                line.className = "h-1 bg-gray-300 absolute w-full top-1/2 left-0 transform -translate-y-1/2 animate-grow-line origin-right";
+                const lock = document.createElement('div');
+                lock.className = "w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center z-10 text-[10px] text-gray-500 opacity-0 transition-opacity duration-300 delay-500";
+                lock.innerHTML = '<i class="fas fa-link"></i>';
+                linkContainer.appendChild(line);
+                linkContainer.appendChild(lock);
+                chainContainer.appendChild(linkContainer);
+                setTimeout(() => {
+                    lock.classList.remove('opacity-0');
+                    resolve();
+                }, 1000);
+            });
+        }
+
+        const aiPlaceholder = document.getElementById('ai-placeholder');
+        const aiImageContainer = document.getElementById('ai-image-container');
+        const scanLine = document.getElementById('scan-line');
+        const aiResults = document.getElementById('ai-results');
+        const startAIBtn = document.getElementById('startAIBtn');
+        const aiStain = document.getElementById('ai-stain');
+        const boundingBox = document.getElementById('bounding-box');
+        const stainBox = document.getElementById('stain-box');
+
+        function runAISimulation() {
+            aiPlaceholder.classList.add('hidden');
+            aiImageContainer.classList.remove('hidden');
+            aiImageContainer.classList.add('animate-fade-in-up');
+            aiResults.innerHTML = '';
+            aiStain.style.opacity = '1';
+            boundingBox.classList.add('hidden');
+            stainBox.classList.add('hidden');
+            scanLine.classList.add('hidden');
+            startAIBtn.disabled = true;
+            startAIBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري التحليل...';
+            setTimeout(() => { scanLine.classList.remove('hidden'); scanLine.classList.add('animate-scan-down'); }, 500);
+            setTimeout(() => { boundingBox.classList.remove('hidden'); addAIResult('fa-tshirt', 'نوع القماش: قطن 100%', 'bg-blue-500'); }, 1500);
+            setTimeout(() => { stainBox.classList.remove('hidden'); addAIResult('fa-exclamation-circle', 'تم كشف بقعة: زيوت', 'bg-red-500'); }, 3000);
+            setTimeout(() => {
+                scanLine.classList.remove('animate-scan-down');
+                scanLine.classList.add('hidden');
+                addAIResult('fa-star', 'العلاج المقترح: غسيل إنزيمي', 'bg-golden-yellow text-midnight-navy', true);
+                startAIBtn.innerHTML = '<i class="fas fa-redo"></i> تحليل جديد';
+                startAIBtn.disabled = false;
+            }, 4500);
+        }
+
+        function addAIResult(icon, text, colorClass, isFinal = false) {
+            const el = document.createElement('div');
+            el.className = `flex items-center gap-3 p-3 rounded-lg shadow-lg text-white animate-pop-in ${isFinal ? 'bg-white' : 'bg-white/10 backdrop-blur-md'}`;
+            const iconBox = document.createElement('div');
+            iconBox.className = `w-8 h-8 rounded-full flex items-center justify-center ${colorClass}`;
+            iconBox.innerHTML = `<i class="fas ${icon}"></i>`;
+            const textBox = document.createElement('span');
+            textBox.className = isFinal ? 'text-midnight-navy font-bold' : 'text-sm font-semibold';
+            textBox.innerText = text;
+            el.appendChild(iconBox);
+            el.appendChild(textBox);
+            aiResults.appendChild(el);
+        }
+
+        const startFullBtn = document.getElementById('startFullBtn');
+        const fullScanLine = document.getElementById('full-scan-line');
+        const aiStatus = document.getElementById('ai-status');
+        const dataPacket = document.getElementById('data-packet');
+        const contractNode = document.getElementById('contract-node');
+        const contractDetails = document.getElementById('contract-details');
+        const finalBlock = document.getElementById('final-block');
+        const successBadge = document.getElementById('success-badge');
+
+        function runFullCycle() {
+            startFullBtn.disabled = true;
+            startFullBtn.classList.add('opacity-50');
+            fullScanLine.classList.add('hidden');
+            fullScanLine.classList.remove('animate-scan-down');
+            aiStatus.innerHTML = '<h4 class="font-bold text-gray-700">بانتظار الملابس...</h4>';
+            dataPacket.style.opacity = '0';
+            contractNode.classList.remove('border-green-500', 'bg-green-50');
+            contractNode.classList.add('border-gray-200');
+            contractDetails.style.opacity = '0';
+            finalBlock.classList.remove('scale-100', 'opacity-100', 'border-royal-blue');
+            finalBlock.classList.add('scale-90', 'opacity-50', 'border-gray-300', 'border-dashed');
+            finalBlock.innerHTML = '<i class="fas fa-cubes text-4xl text-gray-300 mb-2"></i><span class="text-xs text-gray-400">Block Pending</span>';
+            successBadge.style.opacity = '0';
+            aiStatus.innerHTML = '<h4 class="font-bold text-ai-purple animate-pulse">جاري المسح AI...</h4>';
+            fullScanLine.classList.remove('hidden');
+            fullScanLine.classList.add('animate-scan-down');
+            setTimeout(() => {
+                fullScanLine.classList.add('hidden');
+                aiStatus.innerHTML = '<div class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-bold"><i class="fas fa-check"></i> بقعة زيت (حرير)</div>';
+                dataPacket.style.opacity = '1';
+                dataPacket.classList.add('animate-fly-right');
+            }, 2000);
+            setTimeout(() => {
+                dataPacket.style.opacity = '0';
+                dataPacket.classList.remove('animate-fly-right');
+                contractNode.classList.remove('border-gray-200');
+                contractNode.classList.add('border-green-500', 'bg-green-50', 'animate-pulse');
+                contractNode.innerHTML = '<i class="fas fa-file-signature text-3xl text-green-600"></i>';
+                contractDetails.style.opacity = '1';
+            }, 3500);
+            setTimeout(() => {
+                contractNode.classList.remove('animate-pulse');
+                finalBlock.classList.remove('scale-90', 'opacity-50', 'border-gray-300', 'border-dashed');
+                finalBlock.classList.add('scale-100', 'opacity-100', 'border-royal-blue', 'border-4');
+                finalBlock.innerHTML = '<i class="fas fa-cube text-5xl text-royal-blue mb-2"></i><span class="text-xs font-bold text-midnight-navy">Block #8921</span>';
+            }, 5000);
+            setTimeout(() => {
+                successBadge.style.opacity = '1';
+                startFullBtn.disabled = false;
+                startFullBtn.classList.remove('opacity-50');
+                startFullBtn.innerHTML = '<i class="fas fa-redo"></i> تكرار العملية';
+            }, 6000);
+        }
+
+        const startLogisticsBtn = document.getElementById('startLogisticsBtn');
+        const logisticsUnit = document.getElementById('logistics-unit');
+        const pipelineGlow = document.getElementById('pipeline-glow');
+        const hudText = document.getElementById('hud-text');
+        const hudIcon = document.getElementById('hud-icon');
+        const nodes = {
+            home: document.getElementById('node-home'),
+            pickup: document.getElementById('node-pickup'),
+            facility: document.getElementById('node-facility'),
+            end: document.getElementById('node-end')
+        };
+        const popups = {
+            home: document.getElementById('popup-home'),
+            pickup: document.getElementById('popup-pickup'),
+            facility: document.getElementById('popup-facility'),
+            end: document.getElementById('popup-end')
+        };
+
+        function resetLogistics() {
+            logisticsUnit.style.opacity = '0';
+            logisticsUnit.style.right = '7%';
+            logisticsUnit.style.left = 'auto';
+            pipelineGlow.style.width = '0%';
+            Object.values(nodes).forEach(n => {
+                n.className = "w-10 h-10 md:w-14 md:h-14 bg-slate-800 border-2 border-slate-500 rounded-full flex items-center justify-center text-slate-400 transition-all duration-500 shadow-lg";
+                if (n.id.includes('pickup')) n.className = n.className.replace('w-14 h-14', 'w-10 h-10');
+            });
+            Object.values(popups).forEach(p => {
+                p.classList.remove('opacity-100', 'scale-100');
+                p.classList.add('opacity-0', 'scale-90');
+            });
+            hudText.innerText = "النظام في وضع الاستعداد - بانتظار الأوامر";
+            hudIcon.className = "fas fa-power-off";
+        }
+
+        function activateNode(nodeId, color = 'border-tech-cyan') {
+            const node = nodes[nodeId];
+            node.classList.remove('border-slate-500', 'text-slate-400');
+            node.classList.add(color, 'text-white', 'bg-slate-700', 'shadow-[0_0_15px_rgba(6,182,212,0.8)]', 'scale-110');
+            const popup = popups[nodeId];
+            popup.classList.remove('opacity-0', 'scale-90');
+            popup.classList.add('opacity-100', 'scale-100');
+        }
+
+        function updateHud(text, icon) {
+            hudText.innerText = text;
+            hudIcon.className = `fas ${icon} animate-pulse`;
+        }
+
+        async function runSmartLogistics() {
+            startLogisticsBtn.disabled = true;
+            startLogisticsBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            resetLogistics();
+            updateHud("جاري تحميل بروتوكول الجدولة الذكية (AI)...", "fa-microchip");
+            await wait(1000);
+            activateNode('home', 'border-golden-yellow');
+            updateHud("تم تحليل تفضيلات العميل. الموعد مؤكد.", "fa-check-double");
+            await wait(1500);
+            logisticsUnit.style.opacity = '1';
+            updateHud("إطلاق الأسطول الذكي. جاري تحسين المسار...", "fa-satellite-dish");
+            logisticsUnit.style.right = '35%';
+            pipelineGlow.style.width = '35%';
+            await wait(1500);
+            activateNode('pickup');
+            updateHud("تم تحسين المسار. تفعيل نظام تفادي الازدحام.", "fa-route");
+            await wait(2000);
+            logisticsUnit.style.right = '65%';
+            pipelineGlow.style.width = '65%';
+            updateHud("في الطريق للمعمل الذكي. التحكم الحراري نشط.", "fa-temperature-half");
+            await wait(1500);
+            activateNode('facility', 'border-ai-purple');
+            updateHud("المعالجة: دورة الغسيل البيئي قيد التنفيذ.", "fa-droplet");
+            await wait(2500);
+            logisticsUnit.style.right = '93%';
+            pipelineGlow.style.width = '100%';
+            updateHud("توصيل الميل الأخير. مطلوب التحقق الرقمي.", "fa-box");
+            await wait(1500);
+            activateNode('end', 'border-green-400');
+            updateHud("اكتملت المهمة. تم إرسال الإيصال الرقمي.", "fa-flag-checkered");
+            startLogisticsBtn.disabled = false;
+            startLogisticsBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            startLogisticsBtn.innerHTML = '<i class="fas fa-redo"></i> إعادة المحاكاة';
+        }
+
+        const backendLayer = document.getElementById('backend-layer');
+        const screenIdle = document.getElementById('screen-idle');
+        const screenLoading = document.getElementById('screen-loading');
+        const screenSuccess = document.getElementById('screen-success');
+
+        function runSimplicitySim() {
+            screenIdle.classList.add('hidden');
+            screenLoading.classList.remove('hidden');
+            screenLoading.classList.add('flex');
+            backendLayer.classList.remove('opacity-30');
+            backendLayer.classList.add('opacity-100');
+            setTimeout(() => {
+                screenLoading.classList.add('hidden');
+                screenLoading.classList.remove('flex');
+                screenSuccess.classList.remove('hidden');
+                screenSuccess.classList.add('flex');
+                backendLayer.classList.remove('opacity-100');
+                backendLayer.classList.add('opacity-60');
+            }, 3000);
+        }
+
+        function resetSimplicitySim() {
+            screenSuccess.classList.add('hidden');
+            screenSuccess.classList.remove('flex');
+            screenIdle.classList.remove('hidden');
+            backendLayer.classList.remove('opacity-100', 'opacity-60');
+            backendLayer.classList.add('opacity-30');
+        }
+    </script>
 </body>
 </html>
